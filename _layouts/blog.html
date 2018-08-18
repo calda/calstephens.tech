@@ -13,13 +13,6 @@ layout: default
   <div class="posts">
     {% for post in paginator.posts %}
     <div class="post-teaser">
-      {% if post.thumbnail %} 
-      <div class="post-img">
-         <a href="{{ post.url }}">
-             <img src="{{ site.baseurl }}/{{ post.thumbnail }}">
-         </a>
-      </div>
-      {% endif %}
       <span>
           <header>
             <h1>
@@ -32,10 +25,10 @@ layout: default
             </p>
           </header>
           <div class="excerpt">
-            {{ post.content | strip_html | truncate: "250" }}
-            <!--<a class="button" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.content  | split:'<!--break-->' | first }}
+            <a class="button" style="margin-top: 5px;" href="{{ post.url | prepend: site.baseurl }}">
               {{ site.theme_settings.str_continue_reading }}
-            </a>-->
+            </a>
           </div>
       </span>
     </div>

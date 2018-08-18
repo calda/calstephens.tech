@@ -1,36 +1,32 @@
 ---
 layout: post
 title: My Summer at Airbnb
-thumbnail: assets/img/blog/2017-08-04/intern-fair.jpg
+post-id: my-summer-at-airbnb
+thumbnail: intern-fair.jpg
 photoswipe: true
-photoswipe-caption: true
 
 poster:
-  - src: /assets/img/blog/2017-08-04/intern-fair.jpg
+  - src: intern-fair.jpg
     maxres: 1100x543
 
 photos:
-  - src: /assets/img/blog/2017-08-04/1.jpg
+  - src: 1.jpg
     maxres: 1024x576
-  - src: /assets/img/blog/2017-08-04/2.jpg
+  - src: 2.jpg
     maxres: 1100x619
-  - src: /assets/img/blog/2017-08-04/3.jpg
+  - src: 3.jpg
     maxres: 1100x734
     
 cuba:
-  - src: /assets/img/blog/2017-08-04/cuba.png
-    maxres: 1100x600
-    
-cuba:
-  - src: /assets/img/blog/2017-08-04/cuba.png
+  - src: cuba.png
     maxres: 1100x600
     
 better-first-message:
-  - src: /assets/img/blog/2017-08-04/better-first-message.png
+  - src: better-first-message.png
     maxres: 1100x600
     
 contact-host-faq:
-  - src: /assets/img/blog/2017-08-04/contact-host-faq.png
+  - src: contact-host-faq.png
     maxres: 1100x600
     
 ---
@@ -38,6 +34,8 @@ contact-host-faq:
 {% include photoswipe.html images=page.poster %}
 
 This summer I had the pleasure of interning at Airbnb in San Francisco, California. This was a big move -- I had been out west twice, but up until this summer I had never been outside of Georgia for more than a week straight. Needless to say, it was the best summer of my life! I really loved it here at Airbnb. It has a great culture and a was the perfect environment to continue to learn and grow as an iOS Engineer.
+
+<!--break-->
 
 {% include photoswipe.html images=page.photos %}
 

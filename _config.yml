@@ -78,6 +78,8 @@ collections:
     output: true
     permalink: /:collection/:name
 
+permalink: /blog/:title:output_ext
+
 # BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge
