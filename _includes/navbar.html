@@ -1,0 +1,72 @@
+<header class="site-header">
+
+	<!-- Logo and title -->
+	<div class="header-contents">
+		<div class="site-title">
+			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
+		</div>
+
+		<!-- Toggle menu -->
+		<nav class="clear">
+			<a id="pull" class="toggle" href="#">
+				<i class="fa fa-bars fa-lg"></i>
+			</a>
+
+			<!-- Menu -->
+			<div>
+				<ul>
+					{% assign pages = site.pages | sort: 'nav_order' %}
+					{% for p in pages %}
+					{% if p.nav_title and p.hide != true %}
+					{% if p.url == page.url %}
+					<li>
+						<b><a class="clear" href="{{ p.url | relative_url }}">
+							{{ p.nav_title }}
+						</a></b>
+					</li>
+					{% else %}
+					<li>
+						<a class="clear" href="{{ p.url | relative_url }}">
+							{{ p.nav_title }}
+						</a>
+					</li>
+					{% endif %}
+					{% endif %}
+					{% endfor %}
+
+					{% assign links = site.data.nav_links %}
+					{% for link in links %}
+					<li>
+						<a class="clear" href="{{ link.url }}" {% if link.new_tab %} target="_blank" {% endif %}>
+							{{ link.title }}
+						</a>
+					</li>
+					{% endfor %}
+
+					{% if site.theme_settings.portfolio %}
+					<li>
+						<a class="clear" href="{{ site.url }}{{ site.baseurl }}/portfolio">
+							Portfolio
+						</a>
+					</li>
+					{% endif %}
+					{% if site.theme_settings.search %}
+					<li>
+						<a class="clear" href="{{ site.url }}{{ site.baseurl }}/search">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</a>
+					</li>
+					{% endif %}
+					{% if site.theme_settings.tags %}
+					<li>
+						<a class="clear" href="{{ site.url }}{{ site.baseurl }}/tags">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+						</a>
+					</li>
+					{% endif %}
+
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>

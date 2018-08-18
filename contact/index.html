@@ -1,0 +1,29 @@
+---
+layout: page
+title: Contact
+nav_title: Contact
+nav_order: 4
+hide: false
+show-title: true
+---
+
+<p>I'd love to hear what you have to say! I will read & respond to all emails.</p>
+
+<form method="POST" id="contact-form" action="https://formspree.io/{{ site.theme_settings.email_address }}">
+    <input class="form-text-box" type="email" name="email" placeholder="Your email">
+    <input type="hidden" name="_subject" value="{{ site.theme_settings.str_contact_email_subject }}" />
+    <textarea class="form-text-box" name="message" placeholder="Your message"></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<hr>
+
+<div class="twitter">
+    <p>Follow me on Twitter!</p>
+    <a href="https://twitter.com/{{ site.theme_settings.twitter }}" title="{{ site.theme_settings.str_follow_on }} Twitter" class="type">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-twitter fa-stack-2x"></i>
+        </span>
+    </a>
+    <a href="https://twitter.com/{{ site.theme_settings.twitter }}">@{{ site.theme_settings.twitter }}</a>
+</div>

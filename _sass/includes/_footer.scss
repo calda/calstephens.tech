@@ -1,0 +1,23 @@
+.site-footer {
+    @extend %padding-regular;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: lighten($text-color, 30%);
+    font-size: 0.9em;
+
+    .footer-icons {
+        margin-bottom: 6%;
+        ul {
+            list-style: none;
+            li {
+                display: inline;
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 10pt;
+    }
+}

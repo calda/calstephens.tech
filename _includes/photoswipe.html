@@ -1,0 +1,16 @@
+{% assign width = include.width | default: include.images.size %}
+{% assign flex = 100 | divided_by: width  | minus: 1 %}
+{% if include.width == 1 %}
+    {% assign flex = 100 %}
+{% endif %}
+
+<div class="image-gallery" style="{{ include.style }}" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for image in include.images %}
+    <figure style="flex-basis: {{ flex }}%" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="{{ image.src }}" itemprop="contentUrl" data-size="{{ image.maxres }}">
+            <img src="{{ image.src }}" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">{{ image.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+</div>

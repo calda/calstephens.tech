@@ -1,0 +1,127 @@
+  - name: AR Planes
+    subtitle: published February 2018
+    icon: /assets/img/icons/ar-planes.jpg
+    link: https://itunes.apple.com/us/app/ar-planes-flight-tracker/id1292681350?mt=8&at=1000lMfm
+    description: >
+        AR Planes lets you discover nearby planes in augmented reality. It
+        <a href="2017/09/26/recap-hack-the-north-2017.html">started</a>
+        as an award-winning hackathon project at Hack the North 2017 in Waterloo,
+        Ontario, Canada.
+    screenshots:
+        - src: /assets/img/screenshots/ar-planes-1.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/ar-planes-2.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/ar-planes-3.png
+          maxres: 690x1358
+
+
+  - name: Window
+    subtitle: published May 2016
+    icon: /assets/img/icons/window.jpg
+    link: https://itunes.apple.com/us/app/window-fasting-tracker/id1112765909?mt=8&at=1000lMfm
+    description: >
+        Window is an Intermittent Fasting Tracker that lets users track their
+        daily eating window and log their weight. It's offered in three languages,
+        and has sold almost 10,000 copies so far.
+    screenshots:
+        - src: /assets/img/screenshots/window-1.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/window-2.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/window-3.png
+          maxres: 690x1358
+
+
+  - name: Inflation Calculator
+    subtitle: published September 2014
+    icon: /assets/img/icons/inflation-calc.jpg
+    link: https://itunes.apple.com/us/app/inflation-calculator-2018/id926713392?mt=8&at=1000lMfm
+    description: >
+        Inflation Calculator converts dollar values across the years, with data
+        from 1800 to now. It also supports 18 international currencies, like the
+        Euro and the British Pound.
+    screenshots:
+        - src: /assets/img/screenshots/inflation-calc-1.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/inflation-calc-2.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/inflation-calc-3.png
+          maxres: 690x1358
+
+
+  - name: Blurb
+    subtitle: published September 2015
+    icon: /assets/img/icons/blurb.jpg
+    link: https://itunes.apple.com/us/app/blurb-for-instagram/id1055797998?mt=8&at=1000lMfm
+    description: >
+        Blurb is an image editing tool that lets you add a custom blurry border
+        to your photos. It's available in three languages, and has been used over
+        150,000 times.
+    screenshots:
+        - src: /assets/img/screenshots/blurb-1.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/blurb-2.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/blurb-3.png
+          maxres: 690x1358
+
+
+  - name: Emoji Names
+    subtitle: published October 2015
+    icon: /assets/img/icons/emoji-names.jpg
+    link: https://itunes.apple.com/us/app/emoji-names/id1060405457?mt=8&at=1000lMfm
+    description: >
+        Emoji Names can give you the official Unicode name for any emoji. It's
+        been downloaded over 20,000 times so far.
+    screenshots:
+        - src: /assets/img/screenshots/emoji-names-1.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/emoji-names-2.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/emoji-names-3.png
+          maxres: 690x1358
+
+
+  - name: T-Squared
+    subtitle: published November 2015
+    icon: /assets/img/icons/t-squared.png
+    link: https://itunes.apple.com/us/app/t-squared-for-georgia-tech/id1046350734?mt=8&at=1000lMfm
+    description: >
+        T-Squared is an iOS client for Georgia Tech's learning management system.
+        Students can access their classes, assignments, grades, and more. It's
+        been used over 2 million times, but is set to be phased out starting in
+        2019.
+    screenshots:
+        - src: /assets/img/screenshots/t-squared-1.png
+          maxres: 613x1254
+        - src: /assets/img/screenshots/t-squared-2.png
+          maxres: 614x1254
+        - src: /assets/img/screenshots/t-squared-3.png
+          maxres: 372x755
+
+
+  - name: Rhyme a Zoo
+    subtitle: published September 2015
+    icon: /assets/img/icons/rhyme-a-zoo.jpg
+    link: https://itunes.apple.com/us/app/rhyme-a-zoo/id1021329019?mt=8&at=1000lMfm
+    description: >
+        Rhyme a Zoo is an interactive storybook app for kids that promotes
+        early-childhood literacy. I developed it for a client at Augusta University
+        based on an existing PC version.
+    screenshots:
+        - src: /assets/img/screenshots/rhyme-a-zoo.png
+          maxres: 1255x613
+
+
+  - name: Brainy Phonics
+    subtitle: published August 2017
+    icon: /assets/img/icons/brainy-phonics.jpg
+    link: https://itunes.apple.com/us/app/brainy-phonics/id1121110521?mt=8&at=1000lMfm
+    description: >
+        Brainy Phonics is an educational game for kids that teaches basic reading
+        skills and word recognition. I designed and developed it as an original
+        app for a client at Augusta University.
+    screenshots:
+        - src: /assets/img/screenshots/brainy-phonics.png
+          maxres: 1255x615

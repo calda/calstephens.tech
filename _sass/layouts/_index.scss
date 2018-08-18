@@ -1,0 +1,309 @@
+body {
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+.content {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding-top: $padding-x-small;
+}
+
+article {
+    padding-top: 0;
+    p, a {
+        font-size: 14pt;
+        @media (max-width: $break) {
+            font-size: 12pt;
+        }
+    }
+}
+
+hr {
+    margin: 30px 0;
+    @media (max-width: $break) {
+        margin: 20px 0;
+    }
+}
+
+
+.project {
+    margin: 15px 0;
+    height: 85px;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+
+    @media (max-width: $break) {
+        height: 70px;
+    }
+
+    .project-icon {
+        height: 100%;
+        padding: 0;
+        float: left;
+        border-radius: 23%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    }
+
+    .project-text {
+        height: 100%;
+        margin: 0 0 0 115px;
+        position: absolute;
+        @media (max-width: $break) {
+            margin: 0 0 0 90px;
+        }
+
+        div {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h2 {
+            margin: 0;
+            font-size: 24pt;
+            @media (max-width: $break) {
+                font-size: 20pt;
+            }
+        }
+        p {
+            color: gray;
+        }
+    }
+
+    //App Store button next to title on large viewports
+    .app-store-large-viewport {
+        height: 100%;
+        float: right;
+        margin-right: 5px;
+
+        img {
+            padding: 0;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @media (max-width: $app-store-break) {
+                display: none;
+            }
+        }
+    }
+}
+
+.image-gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+
+    figure {
+        img {
+            width: 100%;
+            height: auto;
+            padding: 0;
+        }
+
+        figcaption {
+            font-size: 10pt;
+            color: gray;
+        }
+    }
+}
+
+//App Store button below screenshots on small viewports
+.app-store-small-viewport {
+    text-align: center;
+    display: none;
+
+    img {
+        width: 120px;
+        margin-top: 20px;
+        padding: 0;
+    }
+    @media (max-width: $app-store-break) {
+        display: block;
+    }
+}
+
+.pswp__img {
+    padding: 0;
+}
+
+
+//Page titles
+.title {
+    margin-bottom: 0 !important;
+}
+.title-line {
+    margin: 0 0 20px;
+}
+
+#resume {
+    width: 100%;
+    height: 0px;
+    padding-top: 130%;
+    box-sizing: border-box;
+    position: relative;
+
+    embed {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+//Contact page
+#contact-form {
+    width: 70%;
+    margin-bottom: 50px;
+
+    @media (max-width: $break) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-text-box {
+        width: 100%;
+        padding: 3px 8px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: $text-color;
+        border-width: 1.5px;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+    }
+    textarea {
+        height: 150px;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 34px;
+    }
+    button {
+        color: white;
+        background-color: $text-color;
+        padding: 5px;
+        width: 80px;
+        border-radius: 10px;
+        border: none;
+    }
+    button:hover {
+        background-color: $link-color;
+    }
+}
+
+.twitter {
+    p {
+        margin-bottom: 0;
+    }
+    span {
+        color: #008ff7;
+    }
+}
+
+
+// Header text feature
+.call-out {
+    @extend %padding-regular;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: $header-desc-background-color;
+    font-size: 1.2em;
+    text-align: center;
+    color: $header-desc-text-color;
+    background-repeat: no-repeat;
+    background-size: $feature-image-size;
+
+    /* --- Responsive --- */
+    @media screen and (max-width: 850px) {
+        background-size: 100% auto;
+    }
+
+    //For white images
+    p, a, li, h1, h2, h3, h4, h5 {
+        @extend .header-txt-shadow;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+#main {
+    background-position: 100% 0px, 0% center, center top;
+}
+
+// Post listing
+.posts {
+    .post-teaser {
+        @extend %padding-regular;
+        width: 100%;
+        margin-bottom: 0;
+        padding-top: 25px;
+        display: inline-block;
+        background-size: $feature-image-size;
+        border-bottom: 1px solid $border-color;
+        font-size: 12pt;
+        h1 {
+            margin: 10px 0 0;
+        }
+        p a {
+            @extend .body-link;
+        }
+        img {
+            padding: 0;
+            vertical-align: middle;
+        }
+
+        .post-img {
+            vertical-align: middle;
+            border-radius: 25px;
+            overflow: hidden;
+
+            @media (min-width: $break) {
+                height: 250px;
+            }
+
+            //Smaller screen
+            @media screen and (max-width: $break) {
+                height: 150px;
+            }
+        }
+
+        .post-img img {
+            -moz-transition-timing-function: ease-out;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+
+            -moz-transition: all 5s;
+            -webkit-transition: all 5s;
+            transition: all 5s;
+        }
+    }
+    .excerpt {
+        margin-top: 1em;
+    }
+}
+
+
+// Pagination
+.pagination .button {
+    margin: 0 1.5em;
+    i {
+        vertical-align: middle;
+    }
+}
+
+.pagination {
+    padding: $padding-small $padding-large 0 $padding-large;
+    text-align: center;
+    @media (max-width: 600px) {
+        padding: $padding-small;
+    }
+}
