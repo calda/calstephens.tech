@@ -35,7 +35,6 @@
         display: inline-block;
         height: 100%;
         width: 100%;
-        max-width: $max-width;
         overflow: hidden;
         position: relative;
 
@@ -101,7 +100,7 @@
                 li {
                     text-align: right;
                     background-color: $header-link-backbround-color;
-                    padding: 2px 4px 3px 8px;
+                    padding: 5px 6px 5px 10px;
                     display: inline;
                     margin: 0 0.4em;
                     border-radius: 10px;
@@ -124,6 +123,8 @@
 
 // To clear things when we float the element inisde nav and ul
 .clear {
+    margin: 5px;
+    
     *zoom: 1;
 
     &:after {

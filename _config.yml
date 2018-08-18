@@ -45,7 +45,7 @@ theme_settings:
   disqus_shortname:
   katex: false # Enable if using math markup
   portfolio: false
-  search: true
+  search: false
   tags: false
 
 
@@ -66,7 +66,7 @@ theme_settings:
   google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
 
   # Post navigation
-  post_navigation: false
+  post_navigation: true
 
 # PAGINATION
 paginate: 5
