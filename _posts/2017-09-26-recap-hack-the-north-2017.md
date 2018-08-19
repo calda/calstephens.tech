@@ -36,6 +36,10 @@ That gave us the 3D planes in the sky, but getting human-readable metadata about
 
 Once it all came together at the end of the hackathon, it worked great! We placed Top 14 (out of 220 teams!) and got to [present our hack](https://youtu.be/txA5FvB-1as?t=2191) at the closing ceremonies.
 
+<h4>Video Demo</h4>
+
+{% include youtube.html url='https://www.youtube.com/embed/dnYHQ-7wlag' %}
+
 <h4>The Team</h4>
 
 {% include photoswipe.html images=page.friendship %}
