@@ -11,13 +11,11 @@ poster:
   - src: intern-fair.jpg
     maxres: 1100x543
 
-photos:
+booking-team:
   - src: 1.jpg
     maxres: 1024x576
   - src: 2.jpg
     maxres: 1100x619
-  - src: 3.jpg 
-    maxres: 1100x734
     
 cuba:
   - src: cuba.png
@@ -31,6 +29,10 @@ contact-host-faq:
   - src: contact-host-faq.png
     maxres: 1100x600
     
+interns:
+  - src: 3.jpg 
+    maxres: 1100x734
+    
 ---
 
 {% include photoswipe.html images=page.poster %}
@@ -39,7 +41,7 @@ This summer I had the pleasure of interning at Airbnb in San Francisco, Californ
 
 <!--break-->
 
-{% include photoswipe.html images=page.photos %}
+{% include photoswipe.html images=page.booking-team %}
 
 I worked on the Booking team this summer. They're all about improving the core Airbnb product -- booking homes for your travels. We want to make this process as easy as possible and foster the strong sense of trust that ties our community together. This takes lots of forms, including improving the guest booking experience, increasing host adoption of Instant Book, and giving our hosts the tools they need to succeed. This touches many pieces of our product, so I got the opportunity to work on three very different projects.
 
@@ -56,5 +58,7 @@ My second project was all about improving the initial conversation between hosts
 My last project for the summer improved the Contact Host feature. Despite primarily being geared towards guests asking hosts a question, Contact Host is actually one of the three primary booking methods on Airbnb's platform. When a host answers your question, they have the opportunity to send you a special offer to book their home. We've found that guests find this confusing, though, and a high percentage of these offers go unanswered or even unnoticed. For this project, we hoped that showing the potential guest a set of automatically generated FAQs will preemptively answer their question. If they no longer need to explicitly contact the host, we can nudge them to instantly book the home instead.
 
 <h4>At the end of it all</h4>
+
+{% include photoswipe.html images=page.interns %}
 
 Overall, this was an amazing summer. It's easy to get carried away with talking about shipped features and specific achievements, but at the end of the day this summer was all about me getting a sense of what it's like to work at a big company like Airbnb. And these projects certainly weren't a solo effort -- every project had many other contributors, from project managers and designers to data scientists and backend engineers. I learned a lot about what it's like to work on a big team, and grew tremendously as a person. I have endless gratitude towards Airbnb, all of the friends I made, and everyone else who helped shape my summer.

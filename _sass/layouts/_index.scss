@@ -98,25 +98,44 @@ hr {
 
 .image-gallery {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin-bottom: 1em;
-    margin: 0 auto;
-    max-height: 300px;
-    width: auto;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 0em;
+    margin-bottom: 0.75em;
 
     figure {
         img {
             width: auto;
-            max-height: 300px;
-            padding: 0;
+            max-height: 350px;
+            padding: 0px;
         }
 
         figcaption {
             font-size: 10pt;
             color: gray;
         }
+        
     }
+    
+    .padding {
+        width: 20px;
+    }
+}
+
+.shadow {
+    
+    figure {
+        img {
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.18);
+        }
+    }
+    
+    .padding {
+        width: 35px;
+    }
+    
 }
 
 //App Store button below screenshots on small viewports
