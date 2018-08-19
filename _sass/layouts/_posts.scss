@@ -7,10 +7,6 @@ article,
 }
 
 article {
-    header {
-        margin-bottom: 6%;
-        text-align: center;
-    }
     a:hover {
         @extend .body-link;
     }
@@ -23,6 +19,10 @@ article {
         margin-bottom: 25px;
         line-height: 1.8;
         color: #444 !important;
+    }
+    h1 {
+        margin: 10px 0 0;
+        font-size: 2.25em !important;
     }
 }
 
@@ -41,52 +41,6 @@ footer {
     }
     a.button {
         margin-left: 1em;
-    }
-}
-
-header {
-    h1 {
-        margin: 0;
-    }
-}
-
-.meta {
-    color: rgba($text-color, .5);
-    font-size: 0.9em;
-    letter-spacing: 0.1em;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-/* --- Feature image --- */
-.feature-image {
-    padding: 0%;
-    .post-link {
-        color: $feature-image-text-color;
-    }
-    header {
-        color: $feature-image-text-color;
-        background-size: $feature-image-size;
-        margin-bottom: 0;
-        padding: $padding-large/2.5 $padding-large;
-        .meta {
-            color: rgba($feature-image-text-color, .7);
-        }
-    }
-    .post-content {
-        @extend %padding-regular;
-        padding-bottom: 0;
-    }
-    footer {
-        @extend %padding-regular;
-        padding-top: 0;
-    }
-}
-
-// Responsive scrolling
-.feature-image header {
-    @media screen and (max-width: $break) {
-        padding: $padding-small $padding-small;
     }
 }
 

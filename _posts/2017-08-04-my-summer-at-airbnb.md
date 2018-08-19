@@ -4,6 +4,8 @@ title: My Summer at Airbnb
 post-id: my-summer-at-airbnb
 thumbnail: intern-fair.jpg
 photoswipe: true
+tags: 
+  - Work
 
 poster:
   - src: intern-fair.jpg
@@ -14,7 +16,7 @@ photos:
     maxres: 1024x576
   - src: 2.jpg
     maxres: 1100x619
-  - src: 3.jpg
+  - src: 3.jpg 
     maxres: 1100x734
     
 cuba:

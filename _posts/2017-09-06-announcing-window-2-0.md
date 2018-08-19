@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Announcing Window 2.0
+title: 'Announcing Window 2.0: Weight Tracking and more!'
 post-id: announcing-window-2-0
 thumbnail: weight-tracking.png
 photoswipe: true
+tags: 
+  - Apps
 
 weight-tracking:
   - src: weight-tracking.png
@@ -23,7 +25,7 @@ ipad:
     
 shortcuts:
   - src: shortcuts.png
-    maxres: 1100x620
+    maxres: 1580x620
     
 ---
 
@@ -33,9 +35,9 @@ Since Window was published back in May 2016, I've gotten a lot of great requests
 
 {% include photoswipe.html images=page.weight-tracking %}
 
-Weight tracking was probably the single most-requested feature I've gotten over the past year, and a lot of thought went in to how to make it as useful as possible. Now you can view and log your weight right in Window! You can see a graph of your weight over time, including a seven-day moving average. You also have the option to show your window history as a line on the graph so you can understand how your use of Window is impacting your overall weight.
-
 <!--break-->
+
+Weight tracking was probably the single most-requested feature I've gotten over the past year, and a lot of thought went in to how to make it as useful as possible. Now you can view and log your weight right in Window! You can see a graph of your weight over time, including a seven-day moving average. You also have the option to show your window history as a line on the graph so you can understand how your use of Window is impacting your overall weight.
 
 Window uses Apple Health to access and store your weights, so you can rest easy knowing your data is in safe hands. This also means that your weight data is shared with any other app that works with Apple Health. If you log your weight in another app or with a smart scale device, it will still appear in Window.
 

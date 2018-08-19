@@ -15,7 +15,7 @@ layout: default
     <div class="post-teaser">
       <span>
           <header>
-            <h1>
+            <h1 class="balance-text">
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                 {{ post.title }}
               </a>
@@ -24,12 +24,12 @@ layout: default
               {{ post.date | date: "%B %-d, %Y" }}
             </p>
           </header>
-          <div class="excerpt">
-            {{ post.content  | split:'<!--break-->' | first }}
-            <a class="button" style="margin-top: 5px;" href="{{ post.url | prepend: site.baseurl }}">
+          <div class="excerpt" style="cursor: pointer;" onclick="window.location='{{ post.url | prepend: site.baseurl }}';">
+            {{ post.content  | split:'<!--break-->' | first| replace: 'href', '_href_'}}
+          </div>
+          <a class="button" style="margin-top: 5px;" href="{{ post.url | prepend: site.baseurl }}">
               {{ site.theme_settings.str_continue_reading }}
             </a>
-          </div>
       </span>
     </div>
     {% endfor %}
@@ -51,4 +51,29 @@ layout: default
     {% endif %}
   </div>
   {% endif %}
+</div>
+
+<!-- cycles through posts to get tags -->
+{% assign rawtags = "" %}
+{% for post in site.posts %}
+{% assign post_tags = post.tags | join:'|' | append:'|' %}
+{% assign rawtags = rawtags | append:post_tags %}
+{% endfor %}
+
+<!-- cycles through portfolio collection to get tags -->
+{% assign portfolio =  site.portfolio | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% for tag in portfolio %}
+{% assign portfolio_tags = tag | join:'|' | append:'|' %}
+{% assign rawtags = rawtags | append:portfolio_tags %}
+{% endfor %}
+
+<!-- cycles through pages to get tags -->
+{% for page in site.pages %}
+{% assign page_tags = page.tags | join:'|'  %}
+{% assign rawtags = rawtags | append:page_tags %}
+{% endfor %}    
+    
+<!-- Displays the list of tags-->
+<div style="padding: 25px;">
+    {% include tags_list.html tags=rawtags %}
 </div>

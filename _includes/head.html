@@ -1,6 +1,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="{{ page.title }} &mdash; Cal Stephens">
+  
+    {% if page.layout == 'post' %}
+    <meta property="og:description" content="{{ page.content | strip_html | truncate: '250' | strip }}">
+    <meta property="description" content="{{ page.content | strip_html | truncate: '250' | strip }}">
+    <meta property="og:image" content="{{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ page.thumbnail }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {% endif %}
 
     <!-- JQuery (used for bootstrap and jekyll search) -->
     <script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js" ></script>
@@ -73,6 +81,9 @@
 
     </script>
     {% endif %}
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/balance-text/3.2.1/balancetext.min.js"></script>
+    <script>balanceText();</script>
 
     <!-- seo tags -->
     {% seo %}
