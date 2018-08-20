@@ -17,7 +17,8 @@
 				<ul>
 					{% assign pages = site.pages | sort: 'nav_order' %}
 					{% for p in pages %}
-					{% if p.nav_title and p.hide != true %}
+					{% if (p.nav_title) and (p.hide != true)%}
+                    {% unless p.url contains 'page' %}
 					{% if p.url == page.url %}
 					<li>
 						<b><a class="clear" href="{{ p.url | relative_url }}">
@@ -31,6 +32,7 @@
 						</a>
 					</li>
 					{% endif %}
+                    {% endunless %}
 					{% endif %}
 					{% endfor %}
 

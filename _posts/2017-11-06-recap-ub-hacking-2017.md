@@ -39,6 +39,3 @@ We ran into some challenges along the way. The final version of the app uses a p
 {% include photoswipe.html images=page.friendship class='shadow' %}
 
 I went to UB Hacking with my friend [Jake](http://jakewaldner.com). We were roommates during our freshman and sophomore year, and we're still good friends. We travel together whenever we get the chance. After the hackathon, we spent a couple of days in Niagara Falls, Ontario. A little cold, but overall fun place!
-
-
-

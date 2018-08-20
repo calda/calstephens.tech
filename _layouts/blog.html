@@ -24,8 +24,12 @@ layout: default
               {{ post.date | date: "%B %-d, %Y" }}
             </p>
           </header>
-          <div class="excerpt" style="cursor: pointer;" onclick="window.location='{{ post.url | prepend: site.baseurl }}';">
-            {{ post.content  | split:'<!--break-->' | first| replace: 'href', '_href_'}}
+          <div class="excerpt">
+            {{ post.content  | split:'<!--break-->' 
+              | first 
+              | replace: 'href="/assets',  'href="page_url" zzzz="/assets'
+              | replace: 'page_url', post.url
+             }}
           </div>
           <a class="button" style="margin-top: 5px;" href="{{ post.url | prepend: site.baseurl }}">
               {{ site.theme_settings.str_continue_reading }}

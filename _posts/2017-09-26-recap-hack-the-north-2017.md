@@ -28,15 +28,15 @@ demo:
     maxres: 1160 × 774
 ---
 
-Last weekend I was in Waterloo, Ontario for Hack the North 2017, the largest hackathon in Canada. [Justin Trudeau]() showed up, so you know it's a big deal! I love traveling to hackathons, meeting new people, and working on cool projects, so it was a fantastic weekend!
+Last weekend I was in Waterloo, Ontario for Hack the North 2017, the largest hackathon in Canada. [Justin Trudeau](http://news.communitech.ca/hack-the-north-2017-launches-with-appearance-from-justin-trudeau/) showed up, so you know it's a big deal! I love traveling to hackathons, meeting new people, and working on cool projects, so it was a fantastic weekend!
 
 <h4>The Project</h4>
 
 {% include photoswipe.html images=page.ar-planes class='shadow' %}
 
-<!--break-->
-
 We built an app called [AR Planes](https://www.youtube.com/dnYHQ-7wlag) that lets you visualize and discover the planes flying around you. It uses ARKit to show all of the planes nearby in augmented reality. You can tap on a plane to find out additional information, like the airline, origin airport, and final destination.
+
+<!--break-->
 
 None of my team had experience with augmented reality before, so it was a big learning experience for us. We had to build out a system that ingests [all of the planes in the sky](https://opensky-network.org/api/states/all) every second, finds the nearby planes, and then maps the longitude/latitude/altitude information to actual points within the augmented reality scene.
 
