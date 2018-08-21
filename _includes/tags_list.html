@@ -1,7 +1,7 @@
 {% assign tags = include.tags | split:'|' | sort | uniq %}
 
 {% if include.tags.size > 0 %}
-    <footer>
+    <footer style="margin:10px;">
         <div class="tag-list">
         {% if include.tags.size == 1 %}
           <div class="meta">Tag</div>

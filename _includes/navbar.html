@@ -1,7 +1,21 @@
 <header class="site-header">
-
+    
 	<!-- Logo and title -->
 	<div class="header-contents">
+        <span class="header-background">
+        <img id="img_highQuality" style="width: 0; height:0;"src="/assets/img/header.jpg">
+            
+        <script>
+            $("#img_highQuality").off().on("load", function() {
+                $(".header-background").css({ 
+                    "background-image" : "url(/assets/img/header.jpg)",
+                    "filter" : "blur(0px)" 
+                });
+            });
+        </script>
+            
+        </span>
+        
 		<div class="site-title">
 			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
 		</div>

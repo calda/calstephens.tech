@@ -7,12 +7,11 @@ layout: default
     <p class="meta">{{ page.date | date: "%B %-d, %Y" }}</p>
   </header>
   <section class="post-content">{{ content }}</section>
-   
-   <!-- Tag list -->
-  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-  {% include tags_list.html tags=tag_list %}
     
 </article>
+
+{% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
+{% include tags_list.html tags=tag_list %}
 
 <!-- Disqus -->
 {% if site.theme_settings.disqus_shortname %}
