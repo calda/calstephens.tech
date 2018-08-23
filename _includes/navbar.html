@@ -33,7 +33,7 @@
 					{% for p in pages %}
 					{% if (p.nav_title) and (p.hide != true)%}
                     {% unless p.url contains 'page' %}
-					{% if p.url == page.url %}
+					{% if (p.url == page.url) or ((p.url contains 'blog/' and (page.url contains 'blog/'))) %}
 					<li>
 						<b><a class="clear" href="{{ p.url | relative_url }}">
 							{{ p.nav_title }}

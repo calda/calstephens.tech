@@ -9,33 +9,33 @@ tags:
 
 weight-tracking:
   - src: weight-tracking-1.png
-    maxres: 314 × 558
+    maxres: 931 × 1656
   - src: weight-tracking-2.png
-    maxres: 314 × 557
+    maxres: 931 × 1656
   - src: weight-tracking-3.png
-    maxres: 312 × 557
+    maxres: 931 × 1656
     
 window-notes:
   - src: window-notes-1.png
-    maxres: 339 × 602
+    maxres: 931 × 1656
   - src: window-notes-2.png
-    maxres: 339 × 602
+    maxres: 931 × 1656
     
 fasting-duration:
   - src: fasting-duration-1.png
-    maxres: 347 × 620
+    maxres: 931 × 1656
   - src: fasting-duration-2.png
-    maxres: 346 × 619
+    maxres: 931 × 1656
     
 ipad:
   - src: ipad-1.png
-    maxres: 381 × 508
+    maxres: 1536 × 2048
   - src: ipad-2.png
-    maxres: 381 × 509
+    maxres: 1536 × 2048
     
 shortcuts:
-  - src: shortcuts.png
-    maxres: 436 × 546
+  - src: shortcuts.jpg
+    maxres: 585 × 736
     
 ---
 
@@ -71,7 +71,7 @@ Window also supports the iPad now, so you can finally use it on all of your devi
 
 <h4>Home Screen 3D Touch Shortcuts</h4>
 
-{% include photoswipe.html images=page.shortcuts class='shadow' %}
+{% include photoswipe.html images=page.shortcuts class='shadow' max-height=300 %}
 
 One last quick addition is support for Home Screen 3D Touch Shortcuts. Home screen shortcuts are a quick way to get to important parts of an app, and you can open them by force-touching on any app icon. Window now supports this feature, and includes four useful new shortcuts.
 
@@ -82,3 +82,5 @@ All of these new features were requests from real users! If you have any more id
 <h4>Downloading Window</h4>
 
 If you haven't downloaded Window, you can get it on the [App Store](https://itunes.apple.com/us/app/window-intermittent-fasting-tracker/id1112765909?mt=8) for iPhone or Pad.
+
+{% include appstore.html link='https://itunes.apple.com/us/app/window-intermittent-fasting-tracker/id1112765909?mt=8' %}

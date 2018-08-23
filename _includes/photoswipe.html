@@ -1,7 +1,7 @@
-{% assign width = include.width | default: include.images.size %}
-{% assign flex = 100 | divided_by: width  | minus: 1 %}
-{% if include.width == 1 %}
-    {% assign flex = 100 %}
+{% if include.max-height %}
+    {% assign max-height = include.max-height %}
+{% else %}
+    {% assign max-height = 400 %}
 {% endif %}
 
 <div class="image-gallery {{ include.class }}" style="{{ include.style }}" itemscope itemtype="http://schema.org/ImageGallery">
@@ -11,11 +11,11 @@
         
         {% if page.layout == 'post' %}
         <a href="{{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ image.src }}" itemprop="contentUrl" data-size="{{ image.maxres }}">
-            <img src="{{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ image.src }}" itemprop="thumbnail" alt="Image description" />
+            <img  style="max-height: {{ max-height }}px;" src="{{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ image.src }}" itemprop="thumbnail" alt="Image description" />
         </a>
         {% else %}
         <a href="{{ image.src }}" itemprop="contentUrl" data-size="{{ image.maxres }}">
-            <img src="{{ image.src }}" itemprop="thumbnail" alt="Image description" />
+            <img style="max-height: {{ max-height }}px;" src="{{ image.src }}" itemprop="thumbnail" alt="Image description" />
         </a>
         {% endif %}
         

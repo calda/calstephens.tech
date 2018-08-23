@@ -11,7 +11,7 @@ layout: default
 </article>
 
 {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-{% include tags_list.html tags=tag_list %}
+{% include tags_list.html tags=tag_list custom-margin=30 %}
 
 <!-- Disqus -->
 {% if site.theme_settings.disqus_shortname %}

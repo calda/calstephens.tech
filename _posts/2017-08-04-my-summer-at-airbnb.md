@@ -18,16 +18,24 @@ booking-team:
     maxres: 1100x619
     
 cuba:
-  - src: cuba.png
-    maxres: 1100x600
+  - src: cuba-1.png
+    maxres: 308 × 551
+  - src: cuba-2.png
+    maxres: 311 × 552
     
 better-first-message:
-  - src: better-first-message.png
-    maxres: 1100x600
+  - src: better-first-message-1.png
+    maxres: 302 × 540
+  - src: better-first-message-2.png
+    maxres: 303 × 538
+  - src: better-first-message-3.png
+    maxres: 301 × 539
     
 contact-host-faq:
-  - src: contact-host-faq.png
-    maxres: 1100x600
+  - src: contact-host-faq-1.png
+    maxres: 311 × 554
+  - src: contact-host-faq-2.png
+    maxres: 312 × 555
     
 interns:
   - src: 3.jpg 
@@ -45,15 +53,15 @@ This summer I had the pleasure of interning at Airbnb in San Francisco, Californ
 
 I worked on the Booking team this summer. They're all about improving the core Airbnb product -- booking homes for your travels. We want to make this process as easy as possible and foster the strong sense of trust that ties our community together. This takes lots of forms, including improving the guest booking experience, increasing host adoption of Instant Book, and giving our hosts the tools they need to succeed. This touches many pieces of our product, so I got the opportunity to work on three very different projects.
 
-{% include photoswipe.html images=page.cuba %}
+{% include photoswipe.html images=page.cuba class='shadow' %}
 
 My first project was adding a new flow that allows guests to book homes in Cuba. For some background, Airbnb started operating in Cuba [just a few years ago](https://www.fastcompany.com/3044895/no-internet-no-credit-cards-no-problem-how-airbnb-launched-in-cuba). This was after the US lifted some restrictions and tension between the two countries finally started to thaw. In this entire time that Airbnb had been accepting reservations in Cuba, you could only complete your booking on the web -- our mobile apps just didn't support it. This is because we're required to collect some special information from our guests, including why they're traveling to Cuba. The iOS and Android apps didn't support this extra step, so you just couldn't book homes in Cuba. But no longer! Unfortunately Cuban tourism for leisure is still illegal, so that dashes my dreams of laying on the beach in Havana for now.
 
-{% include photoswipe.html images=page.better-first-message %}
+{% include photoswipe.html images=page.better-first-message class='shadow' %}
 
 My second project was all about improving the initial conversation between hosts and their guests. For hosts, allowing guests from anywhere in the world to instantly book their home can seem a little intimidating. We wanted to give them an opportunity to find out more about these guests, so we added a new feature that allows hosts to ask their guests specific questions as part of the booking process. This should help them get a better idea about who's booking their home, and they have the opportunity to cancel penalty-free if they're uncomfortable with a guest's answer. This is one of many new tools we're giving our Instant Book hosts to make them feel comfortable and help them succeed.
 
-{% include photoswipe.html images=page.contact-host-faq %}
+{% include photoswipe.html images=page.contact-host-faq class='shadow' %}
 
 My last project for the summer improved the Contact Host feature. Despite primarily being geared towards guests asking hosts a question, Contact Host is actually one of the three primary booking methods on Airbnb's platform. When a host answers your question, they have the opportunity to send you a special offer to book their home. We've found that guests find this confusing, though, and a high percentage of these offers go unanswered or even unnoticed. For this project, we hoped that showing the potential guest a set of automatically generated FAQs will preemptively answer their question. If they no longer need to explicitly contact the host, we can nudge them to instantly book the home instead.
 

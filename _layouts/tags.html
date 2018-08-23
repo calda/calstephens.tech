@@ -28,7 +28,7 @@ layout: page
 {% include tags_list.html tags=rawtags %}
 
     <!-- Displays the posts and pages that contains the tag-->
-    <div class="posts">
+    <div class="posts" style="margin-bottom: 65px;">
         {% for tag in tags %}
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor">
             <a href="#{{ tag | cgi_escape }}"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a>
