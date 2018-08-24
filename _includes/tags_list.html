@@ -2,9 +2,9 @@
 
 {% if include.tags.size > 0 %}
     {% if include.custom-margin %}
-    <footer style="margin:{{ include.custom-margin }}px;">
+    <footer style="margin:{{ include.custom-margin }}px 0px;">
     {% else %}
-    <footer style="margin:10px;">
+    <footer style="margin:10px 0px;">
     {% endif %}
         <div class="tag-list">
         {% if include.tags.size == 1 %}

@@ -9,13 +9,19 @@
     {% for image in include.images %}
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
         
-        {% if page.layout == 'post' %}
+        {% if image.max-height %}
+            {% assign max-height-for-image = image.max-height %}
+        {% else %}
+            {% assign max-height-for-image = max-height %}
+        {% endif %}
+        
+        {% if page.layout == 'post' %}    
         <a href="{{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ image.src }}" itemprop="contentUrl" data-size="{{ image.maxres }}">
-            <img  style="max-height: {{ max-height }}px;" src="{{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ image.src }}" itemprop="thumbnail" alt="Image description" />
+            <img  style="max-height: {{ max-height-for-image }}px;" src="{{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ image.src }}" itemprop="thumbnail" alt="Image description" />
         </a>
         {% else %}
         <a href="{{ image.src }}" itemprop="contentUrl" data-size="{{ image.maxres }}">
-            <img style="max-height: {{ max-height }}px;" src="{{ image.src }}" itemprop="thumbnail" alt="Image description" />
+            <img style="max-height: {{ max-height-for-image }}px;" src="{{ image.src }}" itemprop="thumbnail" alt="Image description" />
         </a>
         {% endif %}
         

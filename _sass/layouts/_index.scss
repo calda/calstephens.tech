@@ -100,6 +100,7 @@ hr {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
     margin-top: 0em;
     margin-bottom: 20px;
 
@@ -334,6 +335,10 @@ p a {
             -moz-transition: all 5s;
             -webkit-transition: all 5s;
             transition: all 5s;
+        }
+        
+        h4 {
+            font-size: 1.2em;
         }
     }
     .excerpt {
