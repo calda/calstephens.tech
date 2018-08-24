@@ -2,7 +2,7 @@
 layout: post
 title: 'Announcing Window 2.0: Weight Tracking and more!'
 post-id: announcing-window-2-0
-thumbnail: weight-tracking.png
+thumbnail: thumbnail.png
 photoswipe: true
 tags: 
   - Apps
