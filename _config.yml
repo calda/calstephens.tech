@@ -1,6 +1,5 @@
 # SITE CONFIGURATION
-baseurl:
-url: "http://calstephens.tech"
+url: "https://calstephens.tech"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
