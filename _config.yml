@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl:
-url: "http://cal.natethompson.io"
+url: "http://calstephens.tech"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:

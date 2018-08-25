@@ -1,14 +1,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:title" content="{{ page.title }} &mdash; Cal Stephens">
-  
+    
     {% if page.layout == 'post' %}
-    <meta property="og:description" content="{{ page.content | strip_html | truncate: '250' | strip }}">
-    <meta property="description" content="{{ page.content | strip_html | truncate: '250' | strip }}">
-    <meta property="og:image" content="{{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ page.thumbnail }}">
-    <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:title" content="{{ page.title }} &mdash; Cal Stephens">
+        <title>{{ page.title }} &mdash; Cal Stephens</title>
+    
+        {% capture og-description %}
+            {{ page.content | strip_html | truncate: '250' | strip }}
+        {% endcapture %}
+        <meta property="og:description" content="{{ og-description }}">
+        <meta property="description" content="{{ og-description }}">
+        <meta property="twitter:description" content="{{ og-description }}">
+    
+        {% capture og-image %}
+            {{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ page.thumbnail }} 
+        {% endcapture %}
+        <meta property="og:image" content="{{ og-image }}">
+        <meta property="twitter:image" content="{{ og-image }}">
+    
+    {% else %}
+        <meta property="og:title" content="Cal Stephens &mdash; {{ page.title }}">
+        <title> Cal Stephens &mdash; {{ page.title }}</title>
+
+        {% assign og-description = "I'm a software engineer from Atlanta, GA. I study at Georgia Tech and have previously worked at Apple, Airbnb, and MailChimp. I focus on iOS engineering, but I dabble in other technologies here and there." %}
+
+        <meta property="og:image" content="{{ site.baseurl }}/assets/img/header.jpg">
+        <meta property="twitter:image" content="{{ site.baseurl }}/assets/img/header.jpg">
+        <meta property="og:description" content="{{ og-description }}">
+        <meta property="description" content="{{ description }}">
+        <meta property="twitter:description" content="{{ description }}">
     {% endif %}
+    
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- JQuery (used for bootstrap and jekyll search) -->
     <script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js" ></script>
@@ -58,8 +82,6 @@
     <script src="{{ site.baseurl }}/assets/js/katex.min.js">
     </script>
     {% endif %}
-    
-    <title>{{page.title}} &mdash; Cal Stephens</title>
 
     <!-- Google Analytics -->
     {% if site.theme_settings.google_analytics %}
