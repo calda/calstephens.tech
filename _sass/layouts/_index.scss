@@ -137,6 +137,22 @@ hr {
         width: 30px;
     }
     
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+.more-bottom-padding {
+    margin-bottom: 30px;
+}
+
+.corner-radius {
+    figure {
+        img {
+            border-radius: 15px;
+        }
+    }
+    
 }
 
 //App Store button below screenshots on small viewports
