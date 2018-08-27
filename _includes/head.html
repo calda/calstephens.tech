@@ -15,7 +15,7 @@
         {% endcapture %}
     
         {% capture og-image %}
-            {{ site.baseurl }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ page.thumbnail }} 
+            {{ site.url }}/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}-{{ page.post-id }}/{{ page.thumbnail }} 
         {% endcapture %}
     
     {% else %}
@@ -29,7 +29,7 @@
         {% assign og-description = "I'm a software engineer from Atlanta, GA. I study at Georgia Tech and have previously worked at Apple, Airbnb, and MailChimp. I focus on iOS engineering, but I dabble in other technologies here and there." %}
     
         {% capture og-image %}
-            {{ site.baseurl }}/assets/img/header.jpg
+            {{ site.url }}/assets/img/header.jpg
         {% endcapture %}
     
     {% endif %}
