@@ -10,6 +10,8 @@ show-title: true
 <p>I'd love to hear what you have to say! I will read & respond to all emails.</p>
 
 <form method="POST" id="contact-form" action="https://formspree.io/{{ site.theme_settings.email_address }}">
+    <div class="contact-form-field-header">Your name</div>
+    <input class="form-text-box" type="text" name="name" required>
     <div class="contact-form-field-header">Your email</div>
     <input class="form-text-box" type="email" name="email" required>
     <input type="hidden" name="_subject" value="{{ site.theme_settings.str_contact_email_subject }}" />
