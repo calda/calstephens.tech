@@ -106,12 +106,10 @@
     icon: /assets/img/icons/rhyme-a-zoo.jpg
     link: https://itunes.apple.com/us/app/rhyme-a-zoo/id1021329019?mt=8&at=1000lMfm
     description: >
-        Rhyme a Zoo is an interactive storybook app for kids that promotes
-        early-childhood literacy. I developed it for a client at Augusta University
-        based on an existing PC version.
+        Rhyme a Zoo is an interactive storybook app for kids that promotes early-childhood literacy, published by Augusta University. Players listen to classic rhymes and answer basic comprehension questions. Answering questions correctly gives them coins, which they can use to buy animals for their zoo.
     screenshots:
         - src: /assets/img/screenshots/rhyme-a-zoo.png
-          maxres: 1255x613
+          maxres: 2148 × 1160
 
 
   - name: Brainy Phonics
@@ -119,9 +117,8 @@
     icon: /assets/img/icons/brainy-phonics.jpg
     link: https://itunes.apple.com/us/app/brainy-phonics/id1121110521?mt=8&at=1000lMfm
     description: >
-        Brainy Phonics is an educational game for kids that teaches basic reading
-        skills and word recognition. I designed and developed it as an original
-        app for a client at Augusta University.
+        Brainy Phonics is an educational game published by Augusta University. It teaches 
+        basic reading skills and word recognition. Players learn to recognize letter sounds and full words by playing quiz games and hearing classic rhymes.
     screenshots:
         - src: /assets/img/screenshots/brainy-phonics.png
-          maxres: 1255x615
+          maxres: 2170 × 1170
