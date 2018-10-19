@@ -49,13 +49,13 @@ cupertino-bike:
 sf-bike:
   - src: caltrain.jpeg
     maxres: 4032 × 3024
-    caption: "My $99 Target Bike. Good deal!"
+    caption: "A Caltrain Baby Bullet unloading in San Francisco"
   - src: golden gate.jpeg
     maxres: 4032 × 3024
-    caption: "A building in my office complex (Cupertino City Centrer)"
+    caption: "No bike tour of San Francisco is complete without a roundtrip across the Golden Gate Bridge"
   - src: sausalito.jpeg
     maxres: 4032 × 3024
-    caption: "Infinite Loop (IL1)"
+    caption: "A warm, sunny afternoon in Sausalito"
     
 snaps:
   - src: snap1.jpeg
@@ -100,15 +100,15 @@ One of the small bits I got to work on was a new improvement to the Memory Graph
 
 Even though this information was included in memgraph files, it never actually got displayed anywhere in Xcode. I banged on this problem a bit during my first few weeks, and now all of this info is shown as a part of the Document Inspector! This feature first shipped in Xcode 10 beta 3. 🎉
 
-{% include photoswipe.html images=page.memgraph max-height=800 %}
+{% include photoswipe.html images=page.memgraph max-height=550 %}
 
 <h4>Working on Instruments</h4>
 
 {% include photoswipe.html images=page.instruments-dot-app max-height=300 %}
 
-I did a few other minor patches on Xcode, but otherwise most of the summer was spent working on Instruments. I was in the Developer Tools organization, but most specifically on the **Performance Tools** team. Their biggest focus is Instruments itself, but they work on all sorts of other cool stuff too. The team had big news at WWDC this year, where they got to unveal [Custom Instruments](https://developer.apple.com/videos/play/wwdc2018/410/)! It really changes the game in this department. Instruments is a great platform for profiling the performance of your own apps, and it gets better every year.
+I did a few other minor patches on Xcode, but otherwise most of the summer was spent working on Instruments. I was in the Developer Tools organization, but most specifically on the **Performance Tools** team. Their biggest focus is Instruments itself, but they work on all sorts of other cool stuff too. The team had big news at WWDC this year, where they got to unveil [Custom Instruments](https://developer.apple.com/videos/play/wwdc2018/410/)! It really changes the game in this department. Instruments is a great platform for profiling the performance of your own apps, and it gets better every year.
 
-I spent most of the summer working on some cool prototypes related to Custom Instruments and data visualization. I can't go into much detail (as is the nature of unreleased projects), but I absolutely learned *so much*. I spent a lot of time working with AppKit and other visualization tools. I also got to actually apply some fun CS theory concepts that had otherwise been relegated to the classroom. Super fun!
+I spent most of the summer working on some cool prototypes related to Custom Instruments and data visualization. I can't go into much detail (as is the nature of unreleased projects), but I absolutely learned *so much*. I spent a lot of time working with AppKit and some cool visualization tools. I also got to actually apply some CS theory concepts that had otherwise been relegated to the classroom. Super fun!
 
 <h4>Attending WWDC</h4>
 
