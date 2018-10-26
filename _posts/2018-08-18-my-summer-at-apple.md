@@ -13,9 +13,9 @@ header:
     caption: "WWDC with other Georgia Tech interns!"
     
 xcodeproj:
-  - src: xcode dot xcodeproj.png
-    maxres: 2238 × 1322
-    caption: "Xcode.app and Xcode.xcodeproj"
+  - src: xcode icons.png
+    maxres: 2048 × 1024
+    caption: "Xcode.app"
     
 memgraph:
   - src: xcode-mgdb-dark.png
@@ -23,9 +23,9 @@ memgraph:
     caption: "A sample of the Memory Graph Debugger inspecting some Test app."
     
 instruments-dot-app:
-  - src: instruments.png
-    maxres: 1190 × 1208
-    caption: "Instruments dot app"
+  - src: Instruments icons.png
+    maxres: 2048 × 1024
+    caption: "Instruments.app"
     
 wwdc:
   - src: wwdc-badge.jpeg
@@ -94,9 +94,9 @@ This summer I interned on the Developer Tools team at Apple! It was an amazing e
 
 {% include photoswipe.html images=page.xcodeproj max-height=300 %}
 
-After a few days of onboarding and getting a copy of the mythical *Xcode.xcodeproj* <sup><a href="#[2]">[2]</a></sup>, I hit the ground running. Xcode is *by far* the largest single codebase I've ever worked with. Compared to relatively modern iOS codebases by [Airbnb](/blog/my-summer-at-airbnb.html) or [MailChimp](/blog/my-semester-at-mailchimp.html), Xcode is a behemoth of Cocoa artistry that draws its lineage from the original [1992](https://en.wikipedia.org/wiki/NeXTSTEP#cite_ref-14) NeXTSTEP Project Builder and Interface Builder. That's *atleast* a few years older than I am. It's hard to say how much, if any, of the original code is still floating around, but the [core concepts](https://www.youtube.com/watch?v=dl0CbKYUFTY) are still there. <sup><a href="#[3]">[3]</a></sup>
+After a few days of onboarding and getting a copy of the mythical *Xcode.xcodeproj*, I hit the ground running. Xcode is *by far* the largest single codebase I've ever worked with. Compared to relatively modern iOS codebases by [Airbnb](/blog/my-summer-at-airbnb.html) or [MailChimp](/blog/my-semester-at-mailchimp.html), Xcode is a behemoth of Cocoa artistry that draws its lineage from the original [1992](https://en.wikipedia.org/wiki/NeXTSTEP#cite_ref-14) NeXTSTEP Project Builder and Interface Builder. That's *atleast* a few years older than I am. It's hard to say how much, if any, of the original code is still floating around, but the [core concepts](https://www.youtube.com/watch?v=dl0CbKYUFTY) are still there. <sup><a href="#[2]">[2]</a></sup>
 
-One of the small bits I got to work on was a new improvement to the Memory Graph Debugger. As it turns out, if you find something interesting in your app's memory graph, you can actually *export a .memgraph file*. This is super useful for filing comprehensive bug reports (like radars), since it contains the entire memory dump of your process. They also come will all sorts of great information about the process, like its version, uptime, total memory footprint, binary architecture, etc. <sup><a href="#[4]">[4]</a></sup>
+One of the small bits I got to work on was a new improvement to the Memory Graph Debugger. As it turns out, if you find something interesting in your app's memory graph, you can actually *export a .memgraph file*. This is super useful for filing comprehensive bug reports (like radars), since it contains the entire memory dump of your process. They also come will all sorts of great information about the process, like its version, uptime, total memory footprint, binary architecture, etc. <sup><a href="#[3]">[3]</a></sup>
 
 Even though this information was included in memgraph files, it never actually got displayed anywhere in Xcode. I banged on this problem a bit during my first few weeks, and now all of this info is shown as a part of the Document Inspector! This feature first shipped in Xcode 10 beta 3. 🎉
 
@@ -147,13 +147,9 @@ Overall an amazing summer! I have one more year at Georgia Tech, and then I'll c
 </div>
 
 <div style="font-size: small; color:gray; margin-bottom:14px;">
-<sup><a name="[2]">[2]</a></sup> That screenshot isn't the real Xcode.xcodeproj. <i>File > New Project > macOS > Cocoa App > "Xcode"</i>.
+<sup><a name="[2]">[2]</a></sup> I didn't go hunting for "the oldest living source code left in Xcode" or anything, but I did come across code older than I am when I was working on a patch for some other System framework.
 </div>
 
 <div style="font-size: small; color:gray; margin-bottom:14px;">
-<sup><a name="[3]">[3]</a></sup> I didn't go hunting for "the oldest living source code left in Xcode" or anything, but I did come across code older than I am when I was working on a patch for some other System framework.
-</div>
-
-<div style="font-size: small; color:gray; margin-bottom:14px;">
-<sup><a name="[4]">[4]</a></sup> <i>.memgraph</i> files are just Binary Plists, so it's relatively easy to pop them open and see this information for yourself.
+<sup><a name="[3]">[3]</a></sup> <i>.memgraph</i> files are just Binary Plists, so it's relatively easy to pop them open and see this information for yourself.
 </div>

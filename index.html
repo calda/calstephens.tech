@@ -19,7 +19,14 @@ hide: false
     </div>
     <!-- App Store button next to title on large viewports -->
     <div class="app-store-large-viewport">
-        <a href="{{ project.link }}" target="_blank"><img src="assets/img/download-app-store.svg"></a>
+        <a href="{{ project.link }}" target="_blank"><img class="app-store-badge" src="assets/img/download-app-store.svg"></a>
+        <style>
+            @media (prefers-color-scheme: dark) {
+                .app-store-badge {
+                    content:url('assets/img/download-app-store-dark.svg');
+                }
+            }
+        </style>
     </div>
 </div>
 
