@@ -47,6 +47,11 @@ a.button {
         text-decoration: underline;
         color: darken($link-color, 15%);
     }
+    @media (prefers-color-scheme: dark) {
+        &:hover {
+            color: #7abdd6;
+        }
+    }
 }
 
 .post-link {

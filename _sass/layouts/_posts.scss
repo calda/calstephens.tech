@@ -16,12 +16,19 @@ article {
     .footnotes {
         font-size: 0.9em;
     }
+    
     p {
         font-size: 0.88em !important;
         font-family: sans-serif !important;
         margin-bottom: 25px;
         line-height: 1.8;
         color: #444 !important;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        p {
+            color: #ddd !important;
+        }
     }
     
     h4 {
@@ -44,11 +51,18 @@ footer {
     display: inline-block;
     text-align: center;
     .meta {
-        color: rgba($text-color, .5);
+        color: rgba(white, .5);
         letter-spacing: 0.1em;
         display: inline;
         text-transform: uppercase;
     }
+    
+    @media (prefers-color-scheme: dark) {
+        .meta {
+            color: #ddd;
+        }
+    }
+    
     a.button {
         margin-left: 1em;
     }

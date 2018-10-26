@@ -62,8 +62,15 @@ hr {
                 font-size: 20pt;
             }
         }
+        
         p {
             color: gray;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            p {
+                color: #ddd;
+            }
         }
     }
 
@@ -228,12 +235,21 @@ hr {
         box-shadow: inset 0 1px 2px rgba(0,0,0,.05), 0 -1px 1px #FFF, 0 1px 0 #FFF;
     }
     
+    @media (prefers-color-scheme: dark) {
+        .form-text-box {
+            background-color: rgb(50, 50, 50);
+            border-color: rgb(75, 75, 75);
+            box-shadow: none;
+        }
+    }
+    
     textarea {
         height: 150px;
         max-width: 100%;
         min-width: 100%;
         min-height: 34px;
     }
+    
     button {
         color: white;
         background-color: $text-color;
@@ -242,9 +258,17 @@ hr {
         border-radius: 10px;
         border: none;
     }
+    
     button:hover {
         background-color: $link-color;
     }
+    
+    @media (prefers-color-scheme: dark) {
+        button:hover {
+            background-color:#7abdd6;
+        }
+    }
+    
 }
 
 .twitter {
@@ -365,6 +389,12 @@ p a {
             font-family: sans-serif !important;
             line-height: 180% !important;
             color: #444 !important; 
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            p {
+                color: #ddd !important;
+            }
         }
     }
 }
