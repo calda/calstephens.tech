@@ -63,7 +63,7 @@ You can now add notes to your windows (while they're open or even after they're 
 
 The second most common request I've gotten has been to add more functionality for people who prefer to view their "fast" instead of their "eating window". In the Window History screen, you now have the option to view your fasting duration. Window will automatically calculate the length of your daily fast by finding the time between the end of one eating window and the start of the next. You still track your daily eating window, but now you have the ability to see it from a different perspective.
 
-<h4>iPad Support</h4>
+<h4><a name="ipad"></a>iPad Support</h4>
 
 {% include photoswipe.html images=page.ipad class='shadow' %}
 
