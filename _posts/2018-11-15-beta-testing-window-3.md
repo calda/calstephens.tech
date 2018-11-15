@@ -2,7 +2,7 @@
 layout: post
 title: 'Announcing the Window 3.0 Public Beta'
 post-id: beta-testing-window-3
-thumbnail: thumbnail.png
+thumbnail: social-thumbnail.png
 photoswipe: true
 tags: 
   - Apps
