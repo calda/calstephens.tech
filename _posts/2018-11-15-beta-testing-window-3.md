@@ -74,7 +74,7 @@ The Timeline screen is the newest way to look at your past eating windows and fa
 
 {% include photoswipe.html images=page.custom-schedule max-height=475 %}
 
-Since I published Window in 2016, the most common feature requests were all related to making *Window Scheduling* more customizable and powerful. In this update, I completely reworked the internals of how eating windows are scheduled to open the door for much more customizable schedules. Now, you can set up a Custom Weekly Schecule with different eating windows for each day of the week. 
+Since I published Window in 2016, the most common feature requests were all related to making *Window Scheduling* more customizable and powerful. In this update, I completely reworked the internals of how eating windows are scheduled to open the door for much more customizable schedules. Now, you can set up a Custom Weekly Schedule with different eating windows for each day of the week. 
 
 {% include photoswipe.html images=page.onboarding max-height=475 %}
 
