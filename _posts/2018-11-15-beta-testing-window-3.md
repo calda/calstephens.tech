@@ -94,15 +94,11 @@ This update includes major improvements to the iPad app. Window has supported iP
 
 {% include photoswipe.html images=page.siri max-height=475 %}
 
-You can now use Window with Siri! You can add phrases like *"Hey siri, open my eating window"* or *"Hey Siri, how's my window going?"*. If you set up the phrases on your phone, you can also use them on your Apple Watch or even your HomePod.
-
-**This feature isn't available in the Public Beta yet, but it'll be available soon!*
+You can now use Window with Siri! You can add phrases like *"Hey siri, open my window"* or *"Hey Siri, how's my window going?"*. If you set up the phrases on your phone, you can also use them on your Apple Watch or even your HomePod.
 
 {% include photoswipe.html images=page.today max-height=475 %}
 
 You can also use Window without even unlocking your phone! Window has a new lock screen [widget](https://support.apple.com/en-us/HT207122) that can tell your current eating window or fast.
-
-**This feature isn't available in the Public Beta yet, but it'll be available soon!*
 
 <h4><a name="testing">How to Test</a></h4>
 
