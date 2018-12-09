@@ -2,7 +2,7 @@
 layout: page
 title: "Inflation Calculator Privacy Policy"
 permalink: /inflation-calculator-privacy-policy.html
-hide: true
+hide: false
 ---
 
 # Inflation Calculator Privacy Policy
