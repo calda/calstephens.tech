@@ -21,16 +21,14 @@
     icon: /assets/img/icons/window.jpg
     link: https://itunes.apple.com/us/app/window-fasting-tracker/id1112765909?mt=8&at=1000lMfm
     description: >
-        Window is an Intermittent Fasting Tracker that lets users track their
-        daily eating window and log their weight. It's offered in three languages,
-        and has sold almost 10,000 copies so far.
+        Window is an intermittent fasting tracker that lets users track their daily eating window and log their weight. Window has a companion app for Apple Watch, and works with Siri. It's offered in three languages, and has sold over 15,000 copies so far.
     screenshots:
         - src: /assets/img/screenshots/window-1.png
-          maxres: 690x1358
+          maxres: 852 × 1676
         - src: /assets/img/screenshots/window-2.png
-          maxres: 690x1358
+          maxres: 852 × 1676
         - src: /assets/img/screenshots/window-3.png
-          maxres: 690x1358
+          maxres: 852 × 1676
 
 
   - name: Inflation Calculator
@@ -39,8 +37,8 @@
     link: https://itunes.apple.com/us/app/inflation-calculator-2018/id926713392?mt=8&at=1000lMfm
     description: >
         Inflation Calculator converts dollar values across the years, with data
-        from 1800 to now. It also supports 18 international currencies, like the
-        Euro and the British Pound.
+        from 1800 to now. It also supports 21 other international currencies, like the
+        Euro and the British Pound, and has a companion app for Apple Watch.
     screenshots:
         - src: /assets/img/screenshots/inflation-calc-1.png
           maxres: 690x1358
@@ -48,40 +46,6 @@
           maxres: 690x1358
         - src: /assets/img/screenshots/inflation-calc-3.png
           maxres: 690x1358
-
-
-  - name: Blurb
-    subtitle: published September 2015
-    icon: /assets/img/icons/blurb.jpg
-    link: https://itunes.apple.com/us/app/blurb-for-instagram/id1055797998?mt=8&at=1000lMfm
-    description: >
-        Blurb is an image editing tool that lets you add a custom blurry border
-        to your photos. It's available in three languages, and has been used over
-        150,000 times.
-    screenshots:
-        - src: /assets/img/screenshots/blurb-1.png
-          maxres: 690x1358
-        - src: /assets/img/screenshots/blurb-2.png
-          maxres: 690x1358
-        - src: /assets/img/screenshots/blurb-3.png
-          maxres: 690x1358
-
-
-  - name: Emoji Names
-    subtitle: published October 2015
-    icon: /assets/img/icons/emoji-names.jpg
-    link: https://itunes.apple.com/us/app/emoji-names/id1060405457?mt=8&at=1000lMfm
-    description: >
-        Emoji Names can give you the official Unicode name for any emoji. It's
-        been downloaded over 20,000 times so far.
-    screenshots:
-        - src: /assets/img/screenshots/emoji-names-1.png
-          maxres: 690x1358
-        - src: /assets/img/screenshots/emoji-names-2.png
-          maxres: 690x1358
-        - src: /assets/img/screenshots/emoji-names-3.png
-          maxres: 690x1358
-
 
   - name: T-Squared
     subtitle: published November 2015
@@ -122,3 +86,36 @@
     screenshots:
         - src: /assets/img/screenshots/brainy-phonics.png
           maxres: 2170 × 1170
+
+
+  - name: Blurb
+    subtitle: published September 2015
+    icon: /assets/img/icons/blurb.jpg
+    link: https://itunes.apple.com/us/app/blurb-for-instagram/id1055797998?mt=8&at=1000lMfm
+    description: >
+        Blurb is an image editing tool that lets you add a custom blurry border
+        to your photos. It's available in three languages, and has been used over
+        150,000 times.
+    screenshots:
+        - src: /assets/img/screenshots/blurb-1.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/blurb-2.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/blurb-3.png
+          maxres: 690x1358
+
+
+  - name: Emoji Names
+    subtitle: published October 2015
+    icon: /assets/img/icons/emoji-names.jpg
+    link: https://itunes.apple.com/us/app/emoji-names/id1060405457?mt=8&at=1000lMfm
+    description: >
+        Emoji Names can give you the official Unicode name for any emoji. It's
+        been downloaded over 20,000 times so far.
+    screenshots:
+        - src: /assets/img/screenshots/emoji-names-1.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/emoji-names-2.png
+          maxres: 690x1358
+        - src: /assets/img/screenshots/emoji-names-3.png
+          maxres: 690x1358
