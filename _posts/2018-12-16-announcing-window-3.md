@@ -1,10 +1,9 @@
 ---
 layout: post
-title: 'Anouncing Window 3.0'
+title: 'Announcing Window 3.0'
 post-id: announcing-window-3
 thumbnail: social-thumbnail.png
 photoswipe: true
-hidden: true
 tags: 
   - Apps
   
@@ -51,13 +50,18 @@ siri:
 today:
   - src: today-extension.png
     maxres: 2700 × 2000
-    caption: 'The Window widget on '
-    
+    caption: 'The Window widget on your lock screen'
+
+marketinghero:
+  - src: marketing-hero.png
+    maxres: 2544 × 1792
+    caption: 'Window is the perfect companion for your intermittent fasting journey.'
+
 ---
 
 {% include photoswipe.html images=page.header %}
 
-I've been working hard on a huge update to Window over the past seven months, and it's finally done! **Window 3.0** is a huge update with lots of awesome new features. The app has had a major overhaul. It's now way easier to use, but at the same time lets you do more than ever. There's a new *Dashboard* screen that's your one-stop shop for managing your eating windows, and a new *Timeline* screen that shows you the complete picture of all your windows and fasts. You can now use Window on *Apple Watch*, with *Siri*, and even from your phone's *lock screen*.
+**Window 3.0** is now available on the [**App Store**](https://itunes.apple.com/us/app/window-intermittent-fasting-tracker/id1112765909?mt=8). This is a huge update with lots of awesome new features. The app has had a major overhaul. It's now way easier to use, but at the same time lets you do more than ever. There's a new *Dashboard* screen that's your one-stop shop for managing your eating windows, and a new *Timeline* screen that shows you the complete picture of all your windows and fasts. You can now use Window on *Apple Watch*, with *Siri*, and even from your phone's *lock screen*.
 
 {% include appstore.html link='https://itunes.apple.com/us/app/window-intermittent-fasting-tracker/id1112765909?mt=8' %}
 
@@ -103,9 +107,33 @@ You can now use Window with Siri! You can add phrases like *"Hey siri, open my w
 
 You can also use Window without even unlocking your phone! Window has a new lock screen [widget](https://support.apple.com/en-us/HT207122) that can tell your current eating window or fast.
 
+<h3>User Testimonials</h3>
+
+I've been beta testing this update with real users over the past month! Here's what they have to say:
+
+"*I have loved this app since I first started using it over a year ago. And the new 3.0 updates – WOW!! They take it to a whole new level.* As someone who has made intermittent fasting an integral part of my lifestyle, Window has been a huge part of my long-term success.  One of my favorite features has always been the ability to toggle between both fasting and eating window durations. The new timeline that’s part of the update let’s you see these in one place, in sequence, and it’s a wonderful addition! 
+<div style="margin: -18px">&nbsp;</div> 
+I also love how the dashboard on the new interface gives a great “deep dive” into where you are at the moment, and your most recent activity. And last but not least, I’ve been waiting for the Apple Watch integration since I first got this app, and now that it’s here I’m not sure how I managed without it! I’ve added the Window complication to all my favorite watch faces, and it’s great to be able to check in on your timing, and even open/close a window discretely without having to take out my phone and open the app."
+<div style="margin-left: 20px; margin-top: -15px; margin-bottom: 35px;">
+&mdash; <b>Rachel Awad</b>, International Education Consultant and dedicated IFer.
+</div>
+
+"*I thought this app was solid before, but the 3.0 update is a massive improvement.* The breakaway new feature for me is the Apple Watch integration. The complication has everything I need: easily open an eating window, glance down to see how much time I have left in my window, and glance down during a fast to feel a sense of accomplishment of how far I’ve come. 
+<div style="margin: -18px">&nbsp;</div> 
+I love that this app has a high level of polish. I really appreciate that it's thoughtfully designed and holistically cohesive. That’s no small feat. This app was a great companion when I started experimenting with Intermittent Fasting, because it made the process fun during the early days when I was trying to form the new habit."
+<div style="margin-left: 20px; margin-top: -15px; margin-bottom: 35px;">
+&mdash; <b>Russ Shanahan</b>, creator of <a href="https://happyscale.com"><i>Happy Scale</i></a> for iPhone and iPad.
+</div>
+
 <h3>Downloading Window</h3>
 
-Window is available on the **App Store** for iPhone, iPad, and Apple Watch. You'll love this latest update!
+Window is available on the [**App Store**](https://itunes.apple.com/us/app/window-intermittent-fasting-tracker/id1112765909?mt=8) for iPhone, iPad, and Apple Watch. You'll love this latest update!
+
+{% include photoswipe.html images=page.marketinghero %}
+
+"*Research shows that it takes about 66 days for a new behavior to become a habit.*  The Window tracking app is a fabulous tool to help new intermittent fasters get into the practice of opening and closing their eating windows until the time that a daily eating window becomes a lifestyle. Experienced intermittent fasters also love the Window app, because you can look for day-to-day patterns and tweak your plan as needed to live a flexible intermittent fasting lifestyle.” <br>
+<div style="margin-left: 20px; margin-top: -15px; margin-bottom: 35px;">
+&mdash; <b>Gin Stephens</b>, Author of <a href="https://www.amazon.com/Delay-Dont-Deny-Intermittent-Lifestyle/dp/1541325842"><i>Delay, Don’t Deny</i></a> and <a href="https://www.amazon.com/Feast-Without-Fear-Delay-Lifestyle/dp/1977820182/ref=pd_lpo_sbs_14_t_1?_encoding=UTF8&psc=1&refRID=AHJ6M27K1EJ67YYT0VVM"><i>Feast Without Fear</i></a>
+</div>
 
 {% include appstore.html link='https://itunes.apple.com/us/app/window-intermittent-fasting-tracker/id1112765909?mt=8' %}
-
