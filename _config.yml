@@ -69,7 +69,7 @@ theme_settings:
 
 # PAGINATION
 paginate: 10
-paginate_path: "blog/page:num"
+paginate_path: "page:num"
 
 # PORTFOLIO
 collections:
@@ -85,5 +85,5 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: [jekyll-paginate, jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-redirect-from]
 exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]

@@ -26,6 +26,8 @@ GEM
       rouge (>= 1.7, < 3)
       safe_yaml (~> 1.0)
     jekyll-paginate (1.1.0)
+    jekyll-redirect-from (0.15.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (1.5.1)
       sass (~> 3.4)
     jekyll-seo-tag (2.4.0)
@@ -60,8 +62,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.12)
+  jekyll-redirect-from
   rake (~> 10.0)
   type-on-strap!
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
