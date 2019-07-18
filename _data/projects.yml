@@ -54,7 +54,7 @@
     description: >
         T-Squared was an iOS client for Georgia Tech's learning management system.
         Students could access their classes, assignments, grades, and more. It was
-        used over 2 million times before it was phased out in 2019.
+        used over 2 million times before it was <a href="/blog/remembering-tsquared">phased out</a> in 2019.
     screenshots:
         - src: /assets/img/screenshots/t-squared-1.png
           maxres: 613x1254
