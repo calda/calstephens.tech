@@ -21,7 +21,7 @@
     icon: /assets/img/icons/window.jpg
     link: https://itunes.apple.com/us/app/window-fasting-tracker/id1112765909?mt=8&at=1000lMfm
     description: >
-        Window is an intermittent fasting tracker that lets users track their daily eating window and log their weight. Window has a companion app for Apple Watch, and works with Siri. It's offered in three languages, and has sold over 15,000 copies so far.
+        Window is an intermittent fasting tracker that lets users track their daily eating window and log their weight. Window has a companion app for Apple Watch, and works with Siri. It was <a href="/blog/window-acquired">acquired</a> by a health-focused mobile development firm in May 2019.
     screenshots:
         - src: /assets/img/screenshots/window-1.png
           maxres: 852 × 1676
@@ -85,6 +85,21 @@
     screenshots:
         - src: /assets/img/screenshots/brainy-phonics.png
           maxres: 2170 × 1170
+
+
+  - name: Food Sense
+    subtitle: published March 2019
+    icon: /assets/img/icons/food-sense.png
+    link: https://itunes.apple.com/us/app/food-sense-guide/id1457896728?mt=8
+    description: >
+        Food Sense, published by author <a href="https://melanieavalon.com">Melanie Avalon</a>, is an app to help users identify their food sensitivities and minimize potential food reactions. It features a searchable catalog of over 300 common foods and drinks.
+    screenshots:
+        - src: /assets/img/screenshots/food-sense-1.png
+          maxres: 912 × 1662
+        - src: /assets/img/screenshots/food-sense-2.png
+          maxres: 912 × 1660
+        - src: /assets/img/screenshots/food-sense-3.png
+          maxres: 912 × 1660
 
 
   - name: Blurb

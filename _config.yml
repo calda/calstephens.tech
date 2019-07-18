@@ -77,7 +77,7 @@ collections:
     output: true
     permalink: /:collection/:name
 
-permalink: /blog/:title:output_ext
+permalink: /blog/:title
 
 # BUILD SETTINGS
 markdown: kramdown
