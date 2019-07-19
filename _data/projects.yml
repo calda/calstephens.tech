@@ -102,12 +102,12 @@
           maxres: 912 × 1660
 
 
-  - name: Blurb
+  - name: Blur
     subtitle: published September 2015
     icon: /assets/img/icons/blurb.jpg
-    link: https://itunes.apple.com/us/app/blurb-for-instagram/id1055797998?mt=8&at=1000lMfm
+    link: https://itunes.apple.com/us/app/blur-for-instagram/id1055797998?mt=8&at=1000lMfm
     description: >
-        Blurb is an image editing tool that lets you add a custom blurry border
+        Blur is an image editing tool that lets you add a custom blurry border
         to your photos. It's available in three languages, and has been used over
         150,000 times.
     screenshots:
