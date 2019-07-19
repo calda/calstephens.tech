@@ -7,7 +7,7 @@ hide: false
 
 # Blur Privacy Policy
 
-Protecting your private information is a paramount priority for us. This Statement of Privacy applies to the *Blur* app and governs data collection and usage. *Blur* is a utility app designed to display historical inflation data for the US Dollar, Euro, and 20 other international currencies. By using the *Blur* app, you, “the user”, consent to the data practices described in this statement.
+Protecting your private information is a paramount priority for us. This Statement of Privacy applies to the *Blur* app and governs data collection and usage. *Blur* is a utility app designed to let users customize their photos with a blurry background. By using the *Blur* app, you, “the user”, consent to the data practices described in this statement.
 
 ## Collection of your Personal Information
 *Blur* does not collect any personal information about the user.
