@@ -7,4 +7,4 @@ hide: false
 
 # Photo Map Frequently Asked Questions
 
-todo
+TODO -- this will be done before I publish the 1.0!
