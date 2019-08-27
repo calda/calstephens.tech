@@ -23,6 +23,16 @@ states2:
   - src: states-select.png
     maxres: 1200 × 554
 
+explorer-pack:
+  - src: explorer-pack.png
+    maxres: 750 × 1027
+
+people-filter:
+  - src: people-filter-1.png
+    maxres: 1002 × 1840
+  - src: people-filter-2.png
+    maxres: 1002 × 1840
+
 large-export:
   - src: large-export.jpg
     maxres: 4500 × 4500
@@ -32,6 +42,10 @@ huge-export:
     maxres: 1566 × 852
   - src: huge-export.jpeg
     maxres: 1436 × 1146
+    
+ipad:
+  - src: ipad.png
+    maxres: 2318 × 1712
     
 ---
 
@@ -71,12 +85,16 @@ Most of my past app releases have been paid-up-front, but I wanted to try someth
 
 The problem with freemium apps is that you have to draw a line somewhere between the "free" features and "paid" features. If you give away too much for free, you harm your app's revenue potential. If you lock too much behind a paywall, the user experience will be bad and you could come across as greedy. 
 
-There are lots of potential places where the line could be drawn in Photo Map, but I felt like the "Explorer Pack" is a good first try. It's not perfect by any means &mdash; there's no reason to buy the Explorer Pack if you've from the US and have never travelled abroad, and the free offering isn't very useful if you're from elsewhere and have never been to the US &mdash; BUT I think it's a good starting point. I'm very interested to see how the launch goes!
+{% include photoswipe.html images=page.explorer-pack class='shadow' max-height=340 %}
+
+There are lots of potential places where the line could be drawn in Photo Map, but I felt like the "Explorer Pack" is a good first try. It's not perfect by any means &mdash; there's no reason to buy the Explorer Pack if you've from the US and have never traveled abroad, and the free offering isn't very useful if you're from elsewhere and have never been to the US &mdash; BUT I think it's a good starting point. I'm very interested to see how the launch goes!
 
 <h4>Filtering with Computer Vision</h4>
-It can sometimes be hard to find the *perfect* photo when digging through hundres of photos taken in a given place. Early on, I added a filtering system so you can view photos from a specific year, or only see photos you've marked as "favorites" in the iOS Photos app. During the Beta process, somebody on Twitter suggested using Apple's [Vision framework](https://developer.apple.com/documentation/vision/) to only show photos of people. I thought this suggestion was too cool to not try, but it turned out to be *way* harder than I expected!
+It can sometimes be hard to find the *perfect* photo when digging through hundreds of photos taken in a given place. Early on, I added a filtering system so you can view photos from a specific year, or only see photos you've marked as "favorites" in the iOS Photos app. During the Beta process, somebody on Twitter suggested using Apple's [Vision framework](https://developer.apple.com/documentation/vision/) to only show photos of people. I thought this suggestion was too cool to not try, but it turned out to be *way* harder than I expected!
 
-The [face detection API](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest) is reasonably easy to use, but it takes quite a while to run the algorithm on each of the hundres of photos taken in any given place. The problem is that the user can change the active filters at any time, even while there's a vision scan currently going on in the background. That means the app has to cancel the current in-progress scan and start a new one, possibly where the previous one left off. This was the first time I've ever really worked with cancellable, long-running background tasks, and there were a lot of multithreadding challenges that took some time to work through. The end result is pretty cool, and reasonably performant! (Although I have a feeling it's gonna be my top source of weird and hard-to-reproduce crash reports 😅)
+{% include photoswipe.html images=page.people-filter %}
+
+The [face detection API](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest) is reasonably easy to use, but it takes quite a while to run the algorithm on each of the hundreds of photos taken in any given place. The problem is that the user can change the active filters at any time, even while there's a vision scan currently going on in the background. That means the app has to cancel the current in-progress scan and start a new one, possibly where the previous one left off. This was the first time I've ever really worked with cancellable, long-running background tasks, and there were a lot of multithreadding challenges that took some time to work through. The end result is pretty cool, and reasonably performant! (Although I have a feeling it's gonna be my top source of weird and hard-to-reproduce crash reports 😅)
 
 <h4>Photo Exporting</h4>
 
@@ -93,3 +111,22 @@ The breakthrough I had was that, unlike PNG files, BMP files are completely unco
 {% include photoswipe.html images=page.huge-export class='shadow' %}
 
 Unfortunately, as cool as it is, ***a 3 gigabyte image isn't really all that practical.*** I was hoping that Apple's high-performance [Image I/O framework](https://developer.apple.com/documentation/imageio) would be able to convert the image from a BMP to a PNG (which would bring the file size down into more manageable territory). Unfortunately, Image I/O [still tries to load the entire image into memory before doing the conversion](https://twitter.com/calstephens98/status/1161501756205031425?s=20). That's the same barrier that made me try this on-disk-BMP nonsense in the first place, so it put a nail in the coffin on this experiment. If you have any ideas for a workaround, please [get in touch](/contact/)! For now, a measly 13,000 × 13,000 pixel option will have to do. *(That's the largest image buffer an iPhone X can reliable work with. Photo Map uses smaller buffer sizes on older devices.)*
+
+<h4>iPad.... and Mac??</h4>
+
+{% include photoswipe.html images=page.ipad %}
+
+Photo Map fully supports iPad, and looks awesome on the larger screen size. The bottom tray moves over to the left, leaving plenty of space for you to see your map. That's one feature that actually *wasn't* too difficult, because I just used a great library called [FloatingPanel](https://github.com/SCENEE/FloatingPanel). Good artists copy, great artists use existing open source implementations.
+
+I'm also really interested in bringing Photo Map to the Mac this fall. [Mac Catalyst](https://developer.apple.com/ipad-apps-for-mac/) looks really promising, and should make it a fairly easy process. I have a fair number of third-party libraries I would also have to port over, but I think it would be worth the effort! Maybe keep an eye out for a beta release in September 😉
+
+One problem is that, the more platforms an app supports, the more likely people are to expect it to sync their data across all of their devices. Right now, Photo Map doesn't offer any cloud syncing functionality. I feel like, for the Mac app experience to make sense, it would have to sync with the iPhone app. I *conveniently* have an unused iCloud Drive-based photo syncing system (that I built for [Window](/blog/announcing-window-3) but [never shipped](/blog/window-acquired)) lying around. So I'm thinking about it!
+
+<h4>Launch 🚀</h4>
+I've been working on Photo Map since April, and it's been in beta since July. I'm super pumped to see how the launch goes! Only time will tell, but I'm optimistic. Download it and [let me know what you think!](https://twitter.com/calstephens98)!
+
+<h3>Downloading Photo Map</h3>
+
+Photo Map is now available to download on the [**App Store**](https://apps.apple.com/us/app/photo-map-us-europe-more/id1472276407#?platform=iphone) for iPhone and iPad!
+
+{% include appstore.html link='https://apps.apple.com/us/app/photo-map-us-europe-more/id1472276407#?platform=iphone' %}
