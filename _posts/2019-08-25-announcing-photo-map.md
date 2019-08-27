@@ -18,34 +18,48 @@ marketing:
 states1:
   - src: states-map.jpg
     maxres: 2000 × 1031
+    caption: "My example map from the original States app prototype, built at HackMerced 2017."
     
 states2:
   - src: states-select.png
     maxres: 1200 × 554
+    caption: "The original States app prototype included a very similar flow where you could tap on a state and then pick from the photos you took inside that state."
 
 explorer-pack:
   - src: explorer-pack.png
     maxres: 750 × 1027
+    caption: "The top portion of the Explorer Pack upsell screen in Photo Map"
 
 people-filter:
   - src: people-filter-1.png
     maxres: 1002 × 1840
+    caption: "Different options for filtering your photos in a region"
   - src: people-filter-2.png
     maxres: 1002 × 1840
+    caption: "My photos of People in California (automatically detected using computer vision)"
 
 large-export:
   - src: large-export.jpg
     maxres: 4500 × 4500
+    caption: "A Map Export straigt out of Photo Map. The original export was 13,000 ×  13,000 pixels (this one is scaled down a bit for the web)."
     
 huge-export:
   - src: bmp-header.jpeg
     maxres: 1566 × 852
+    caption: "A snippit of sample code for write out the header block of a BMP image. This took forever to get right, even though the meat of it was lifted straight off of a Stack Overflow post."
   - src: huge-export.jpeg
     maxres: 1436 × 1146
+    caption: "An example of a HUGE map I was able to export. 32,000 × 22,0000 is ridiculously large!"
     
 ipad:
   - src: ipad.png
     maxres: 2318 × 1712
+    caption: "Photo Map running on iPad"
+    
+hero:
+  - src: thumbnail.png
+    maxres: 1500 × 844
+    
     
 ---
 
@@ -123,10 +137,12 @@ I'm also really interested in bringing Photo Map to the Mac this fall. [Mac Cata
 One problem is that, the more platforms an app supports, the more likely people are to expect it to sync their data across all of their devices. Right now, Photo Map doesn't offer any cloud syncing functionality. I feel like, for the Mac app experience to make sense, it would have to sync with the iPhone app. I *conveniently* have an unused iCloud Drive-based photo syncing system (that I built for [Window](/blog/announcing-window-3) but [never shipped](/blog/window-acquired)) lying around. So I'm thinking about it!
 
 <h4>Launch 🚀</h4>
-I've been working on Photo Map since April, and it's been in beta since July. I'm super pumped to see how the launch goes! Only time will tell, but I'm optimistic. Download it and [let me know what you think!](https://twitter.com/calstephens98)!
+I've been working on Photo Map since April, and it's been in beta since July. I'm super pumped to see how the launch goes! Only time will tell, but I'm optimistic. Download it and [let me know what you think](https://twitter.com/calstephens98)!!
 
 <h3>Downloading Photo Map</h3>
 
 Photo Map is now available to download on the [**App Store**](https://apps.apple.com/us/app/photo-map-us-europe-more/id1472276407#?platform=iphone) for iPhone and iPad!
+
+{% include photoswipe.html images=page.hero max-height=500 %}
 
 {% include appstore.html link='https://apps.apple.com/us/app/photo-map-us-europe-more/id1472276407#?platform=iphone' %}
