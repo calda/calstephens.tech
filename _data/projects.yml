@@ -1,3 +1,17 @@
+  - name: Photo Map
+    subtitle: published August 2019
+    icon: /assets/img/icons/photo-map.png
+    link: https://apps.apple.com/us/app/photo-map-us-europe-more/id1472276407#?platform=iphone
+    description: >
+        Photo Map uses your photos to tell the story of the places you’ve visited. Your trip photos are found automatically and combined together on the map to create a beautiful composite of all the places you’ve been.
+    screenshots:
+        - src: /assets/img/screenshots/photo-map-1.png
+          maxres: 776 × 1524
+        - src: /assets/img/screenshots/photo-map-2.png
+          maxres: 776 × 1524
+        - src: /assets/img/screenshots/photo-map-3.png
+          maxres: 776 × 1524
+
   - name: AR Planes
     subtitle: published February 2018
     icon: /assets/img/icons/ar-planes.jpg

@@ -101,7 +101,7 @@ The problem with freemium apps is that you have to draw a line somewhere between
 
 {% include photoswipe.html images=page.explorer-pack class='shadow' max-height=340 %}
 
-There are lots of potential places where the line could be drawn in Photo Map, but I felt like the "Explorer Pack" is a good first try. It's not perfect by any means &mdash; there's no reason to buy the Explorer Pack if you've from the US and have never traveled abroad, and the free offering isn't very useful if you're from elsewhere and have never been to the US &mdash; BUT I think it's a good starting point. I'm very interested to see how the launch goes!
+There are lots of potential places where the line could be drawn in Photo Map, but I felt like the "Explorer Pack" is a good first try. It's not perfect by any means &mdash; there's no reason to buy the Explorer Pack if you've from the US and have never traveled abroad, and the free offering isn't very useful if you're from elsewhere and have never been to the US &mdash; but I think it's a good starting point. I'm very interested to see how the launch goes!
 
 <h4>Filtering with Computer Vision</h4>
 It can sometimes be hard to find the *perfect* photo when digging through hundreds of photos taken in a given place. Early on, I added a filtering system so you can view photos from a specific year, or only see photos you've marked as "favorites" in the iOS Photos app. During the Beta process, somebody on Twitter suggested using Apple's [Vision framework](https://developer.apple.com/documentation/vision/) to only show photos of people. I thought this suggestion was too cool to not try, but it turned out to be *way* harder than I expected!
@@ -120,7 +120,7 @@ The problem with generating really, really large images is that iPhones simply d
 
 The workaround for this problem is to generate the image in multiple slices (where each slice on its own can fit within the RAM constraints), and then combine the slices into one file on-disk. Images have specific file formats, though, so it isn't as simple as just cramming multiple PNG files into the same file. 
 
-The breakthrough I had was that, unlike PNG files, BMP files are completely uncompressed &mdash; they're literally just "bitmap" files, which is the same image representation used when you render an image in-memory. This makes them really inefficient for large images, BUT it means that it's possible to write a single BMP file in multiple slices. I set up a system that manually wrote out the BMP file header, rendered a slice of the image, blitz'd the pixels into the file, and then rendered more slices until the image was finished. It took a looong time to get right, but I got it to actually work!
+The breakthrough I had was that, unlike PNG files, BMP files are completely uncompressed &mdash; they're literally just "bitmap" files, which is the same image representation used when you render an image in-memory. This makes them really inefficient for large images, but it means that it's possible to write a single BMP file in multiple slices. I set up a system that manually wrote out the BMP file header, rendered a slice of the image, blitz'd the pixels into the file, and then rendered more slices until the image was finished. It took a looong time to get right, but I got it to actually work!
 
 {% include photoswipe.html images=page.huge-export class='shadow' %}
 
