@@ -8,8 +8,12 @@ hide: false
 ## Photo Map Frequently Asked Questions
 
 {% include section.html name="Table of Contents" %}
+ - {% include link.html name="Does Photo Map upload my photos to the internet?" %}
  - {% include link.html name="Why can't Photo Map find photos from my trip?" %}
  - {% include link.html name="Why doesn't Photo Map include a map for my country?" %}
+
+{% include section.html name="Does Photo Map upload my photos to the internet?" %}
+No! When Photo Map imports your photos, they're stored privately inside the Photo Map app, and never shared or uploaded to the internet. You can learn more by reviewing Photo Map's [Privacy Policy](https://calstephens.tech/photo-map-privacy-policy).
 
 {% include section.html name="Why can't Photo Map find photos from my trip?" %}
 Photo Map uses the Location Data associated with the photos in your Photo Library.
@@ -20,4 +24,4 @@ Photo Map uses the Location Data associated with the photos in your Photo Librar
 If Photo Map is unable to automatically find your photos, you can manually select any photo from your Photo Library. Tap on the region, tap on the **More Options (...)** button at the top-right corner of the sliding panel, and then tap **Choose Photo from Library**.
 
 {% include section.html name="Why doesn't Photo Map include a map for my country?" %}
-Photo Map uses high-resolution [GeoJSON shapefiles](https://geojson.org) to store how different regions are shaped, and to filter photo locations coordinates by region. It's pretty easy to add new maps once I have high-resolution shapefiles. If you have shapefiles for your country and would like to see them added to Photo Map, [get in touch](/contact/)!
+Photo Map uses high-resolution [GeoJSON shapefiles](https://geojson.org) to store how different regions are shaped, and to filter photo coordinates by region. It's pretty easy to add new maps once I have high-resolution shapefiles. If you have shapefiles for your country and would like to see them added to Photo Map, [get in touch](/contact/)!
