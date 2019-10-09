@@ -75,7 +75,7 @@ hero:
 
 <h3>Maps for 31 new countries</h3>
 
-{% include photoswipe.html images=page.countries max-height=450 class='shadow' %}
+{% include photoswipe.html images=page.countries max-height=450 %}
 
 When I [launched Photo Map](/blog/announcing-photo-map), it only included maps for three countires: the United States, Canada, and Australia. I picked them because they're fairly large countires with large sub-regions. After all, US States are about the size of [whole European countries](https://twentytwowords.com/map-of-u-s-states-transposed-onto-similar-european-countries-to-give-a-sense-of-size/). Photo Map really struck a chord with a lot of users from around the world, though, who wanted to be able to use it with their own home country. 
 
@@ -83,7 +83,7 @@ I was linked to a [GitHub repo](https://github.com/deldersveld/topojson) with To
 
 <h3>Maps for the 50 US States</h3>
 
-{% include photoswipe.html images=page.states max-height=450 class='shadow' %}
+{% include photoswipe.html images=page.states max-height=450 %}
 
 I was soliciting country requests on Twitter, and my friend [Logan](https://twitter.com/loganjmcelroy) cheekily requested support for the Counties of Georgia. The [TopoJSON repo](https://github.com/deldersveld/topojson) I was using happened to also have [counties data](https://github.com/deldersveld/topojson/tree/master/countries/us-states) for all 50 of the US States, so I couldn't resist. All content is good content! *(The hardest part with this was actually trying to choose a unique emoji for each of the 50 states. It wasn't easy!)*
 
