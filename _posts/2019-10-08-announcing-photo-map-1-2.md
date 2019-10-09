@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Announcing Photo Map 1.2'
+title: 'Announcing Photo Map 1.2: Over 80 new maps, and more!'
 post-id: announcing-photo-map-1-2
 thumbnail: thumbnail.png
 photoswipe: true
