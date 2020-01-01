@@ -51,8 +51,7 @@
     link: https://itunes.apple.com/us/app/inflation-calculator-2018/id926713392?mt=8&at=1000lMfm
     description: >
         Inflation Calculator converts dollar values across the years, with data
-        from 1800 to now. It also supports 21 other international currencies, like the
-        Euro and the British Pound, and has a companion app for Apple Watch.
+        from 1800 to now. It supports 22 international currencies and is available in 14 language. It also has a companion app for Apple Watch.
     screenshots:
         - src: /assets/img/screenshots/inflation-calc-1.png
           maxres: 690x1358
