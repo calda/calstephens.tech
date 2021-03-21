@@ -29,22 +29,6 @@
         - src: /assets/img/screenshots/ar-planes-3.png
           maxres: 690x1358
 
-
-  - name: Window
-    subtitle: published May 2016
-    icon: /assets/img/icons/window.jpg
-    link: https://itunes.apple.com/us/app/window-fasting-tracker/id1112765909?mt=8&at=1000lMfm
-    description: >
-        Window is an intermittent fasting tracker that lets users track their daily eating window and log their weight. Window has a companion app for Apple Watch, and works with Siri. It was <a href="/blog/window-acquired">acquired</a> by a health-focused mobile development firm in May 2019.
-    screenshots:
-        - src: /assets/img/screenshots/window-1.png
-          maxres: 852 × 1676
-        - src: /assets/img/screenshots/window-2.png
-          maxres: 852 × 1676
-        - src: /assets/img/screenshots/window-3.png
-          maxres: 852 × 1676
-
-
   - name: Inflation Calculator
     subtitle: published September 2014
     icon: /assets/img/icons/inflation-calc.jpg
@@ -59,6 +43,20 @@
           maxres: 690x1358
         - src: /assets/img/screenshots/inflation-calc-3.png
           maxres: 690x1358
+          
+  - name: Window
+    subtitle: acquired May 2019
+    icon: /assets/img/icons/window.jpg
+    link: https://itunes.apple.com/us/app/window-fasting-tracker/id1112765909?mt=8&at=1000lMfm
+    description: >
+        Window is an intermittent fasting tracker that lets users track their daily eating window and log their weight. Window has a companion app for Apple Watch, and works with Siri. It was <a href="/blog/window-acquired">acquired</a> by a health-focused mobile development firm in May 2019.
+    screenshots:
+        - src: /assets/img/screenshots/window-1.png
+          maxres: 852 × 1676
+        - src: /assets/img/screenshots/window-2.png
+          maxres: 852 × 1676
+        - src: /assets/img/screenshots/window-3.png
+          maxres: 852 × 1676
 
   - name: T-Squared
     subtitle: published November 2015
@@ -113,36 +111,3 @@
           maxres: 912 × 1660
         - src: /assets/img/screenshots/food-sense-3.png
           maxres: 912 × 1660
-
-
-  - name: Blur
-    subtitle: published September 2015
-    icon: /assets/img/icons/blurb.jpg
-    link: https://itunes.apple.com/us/app/blur-for-instagram/id1055797998?mt=8&at=1000lMfm
-    description: >
-        Blur is an image editing tool that lets you add a custom blurry border
-        to your photos. It's available in three languages, and has been used over
-        150,000 times.
-    screenshots:
-        - src: /assets/img/screenshots/blurb-1.png
-          maxres: 690x1358
-        - src: /assets/img/screenshots/blurb-2.png
-          maxres: 690x1358
-        - src: /assets/img/screenshots/blurb-3.png
-          maxres: 690x1358
-
-
-  - name: Emoji Names
-    subtitle: published October 2015
-    icon: /assets/img/icons/emoji-names.jpg
-    link: https://itunes.apple.com/us/app/emoji-names/id1060405457?mt=8&at=1000lMfm
-    description: >
-        Emoji Names can give you the official Unicode name for any emoji. It's
-        been downloaded over 20,000 times so far.
-    screenshots:
-        - src: /assets/img/screenshots/emoji-names-1.png
-          maxres: 690x1358
-        - src: /assets/img/screenshots/emoji-names-2.png
-          maxres: 690x1358
-        - src: /assets/img/screenshots/emoji-names-3.png
-          maxres: 690x1358
