@@ -3,7 +3,7 @@
     icon: /assets/img/icons/photo-map.png
     link: https://apps.apple.com/us/app/photo-map-us-europe-more/id1472276407#?platform=iphone
     description: >
-        Photo Map uses your photos to tell the story of the places you’ve visited. Your trip photos are found automatically and combined together on the map to create a beautiful composite of all the places you’ve been.
+        Photo Map uses your photos to tell the story of the places you’ve visited. Your trip photos are found automatically and combined together on the map to create a beautiful composite of all the places you’ve been. Acquired in January 2023.
     screenshots:
         - src: /assets/img/screenshots/photo-map-1.png
           maxres: 776 × 1524
@@ -20,7 +20,7 @@
         AR Planes lets you discover nearby planes in augmented reality. It
         <a href="/blog/recap-hack-the-north-2017">started</a>
         as an award-winning hackathon project at Hack the North 2017 in Waterloo,
-        Ontario, Canada.
+        Ontario, Canada. Aquired in August 2022.
     screenshots:
         - src: /assets/img/screenshots/ar-planes-1.png
           maxres: 690x1358
