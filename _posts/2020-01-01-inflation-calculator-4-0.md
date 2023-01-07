@@ -4,6 +4,7 @@ title: 'Inflation Calculator now available in 14 languages'
 post-id: inflation-calculator-4-0
 thumbnail: thumbnail.png
 photoswipe: true
+hidden: true
 tags: 
   - Apps
 
