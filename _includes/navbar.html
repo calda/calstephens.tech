@@ -9,8 +9,12 @@
             $("#img_highQuality").off().on("load", function() {
                 $(".header-background").css({ 
                     "background-image" : "url(/assets/img/header.jpg)",
-                    "filter" : "blur(0px)" 
-                });
+                    "filter" : "blur(0px)"
+                })
+				// In Safari the above CSS was being applied to the element but
+				// the element wasn't being rerendered. As a workaround we can
+				// toggle the visibility of the element to force it to be rerendered.
+				.hide().show(0);
             });
         </script>
             
