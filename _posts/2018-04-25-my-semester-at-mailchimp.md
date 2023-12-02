@@ -6,11 +6,6 @@ thumbnail: team.jpg
 photoswipe: true
 tags: 
   - Work
-  
-team:
-  - src: team.jpg 
-    maxres: 4032 × 3024
-    caption: "The MailChimp iOS team &mdash; Small but mighty!"
     
 mobile-ad-editing:
   - src: demo-1.png
@@ -49,8 +44,6 @@ previously:
 ---
 
 This semester, I worked part-time on the mobile team at [MailChimp](htts://mailchimp.com) here in Atlanta. This was my second time at MailChimp (I interned on the same team in 2016), and I had even more fun this time around!
-
-{% include photoswipe.html images=page.team %}
 
 MailChimp used to focus exclusively on email, but they've been broadening their horizons quite a bit lately. You can now create online ads, landing pages, and even [*physical postcards*](https://mailchimp.com/features/postcards-beta/) through MailChimp! While I was there this Spring, I worked on a new flow for our [mobile app](https://mailchimp.com/features/mailchimp-mobile/) that lets users create and manage their Facebook ads right on their phone. 
 
